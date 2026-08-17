@@ -1,0 +1,29 @@
+{
+  "entities": {
+    "Lot": {
+      "title": "Lot",
+      "description": "Represents a plot of land for sale",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "number": { "type": "number" },
+        "area": { "type": "number" },
+        "status": { "type": "string", "enum": ["disponible", "vendido", "oferta"] },
+        "price": { "type": "number" },
+        "path": { "type": "string" },
+        "quadrant": { "type": "string" },
+        "elevation": { "type": "number" },
+        "distanceToPool": { "type": "number" },
+        "hasSolarOpt": { "type": "boolean" },
+        "rotation": { "type": "number" }
+      },
+      "required": ["id", "number", "area", "status", "price"]
+    }
+  },
+  "firestore": {
+    "lots/{lotId}": {
+      "schema": { "$ref": "#/entities/Lot" },
+      "description": "Stores the lots available in the eco-condominium masterplan"
+    }
+  }
+}

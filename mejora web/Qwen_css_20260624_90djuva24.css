@@ -1,0 +1,68 @@
+/* Responsive Queries for Moon Paracas */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 15px 5%;
+  }
+  
+  .logo {
+    margin-bottom: 15px;
+  }
+  
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .nav a {
+    margin: 5px 10px;
+  }
+  
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  
+  .hero-content p {
+    font-size: 15px;
+  }
+  
+  .btn {
+    margin: 5px auto;
+    display: block;
+    max-width: 250px;
+  }
+  
+  .featured {
+    padding: 50px 5%;
+  }
+  
+  .grid-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .map-container {
+    overflow-x: auto;
+  }
+  
+  .panel-left,
+  .panel-right {
+    max-height: 40vh;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+  
+  .stat-number {
+    font-size: 24px;
+  }
+  
+  .card-property {
+    margin: 0 10px;
+  }
+}

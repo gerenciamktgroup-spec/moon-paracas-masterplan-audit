@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /comisiones
+
+Sitemap: https://moon-paracas.vercel.app/sitemap.xml

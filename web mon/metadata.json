@@ -1,0 +1,6 @@
+{
+  "name": "Moon Paracas - Master Plan Interactivo",
+  "description": "Master plan interactivo y simulador financiero para el condominio ecológico de lujo Moon Paracas, Ica, Perú.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

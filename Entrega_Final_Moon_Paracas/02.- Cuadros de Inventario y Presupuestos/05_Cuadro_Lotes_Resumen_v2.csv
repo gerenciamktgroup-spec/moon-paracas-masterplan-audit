@@ -1,0 +1,313 @@
+Manzana;Numero de Lote;Area (m2);Tipologia;Precio (S/);Distancia Oasis (m);Distancia Cochera (m);Estado
+M1;Lote 1;225,54;Lote Estándar;27065;106;14;Disponible
+M1;Lote 2;224,67;Lote Estándar;26960;106;26;Disponible
+M1;Lote 3;224,37;Lote Estándar;26924;106;39;Disponible
+M1;Lote 4;225,14;Lote Estándar;27017;107;51;Disponible
+M1;Lote 5;226,12;Lote Estándar;27134;108;63;Vendido
+M1;Lote 6;227,66;Lote Estándar;27319;109;75;Disponible
+M1;Lote 7;229,65;Lote Estándar;27558;110;88;Disponible
+M2;Lote 8;230,62;Lote Estándar;27674;112;105;Disponible
+M2;Lote 9;231,26;Lote Estándar;27751;112;117;Disponible
+M2;Lote 10;231,58;Lote Estándar;27790;112;129;Disponible
+M2;Lote 11;231,89;Lote Estándar;27827;112;141;Disponible
+M2;Lote 12;232,20;Lote Estándar;27864;112;145;Disponible
+M2;Lote 13;232,53;Lote Estándar;27904;112;145;Disponible
+M2;Lote 14;232,84;Lote Estándar;27941;113;145;Separado
+M2;Lote 15;233,15;Lote Estándar;27978;113;145;Disponible
+M2;Lote 16;233,46;Lote Estándar;28015;113;145;Disponible
+M2;Lote 17;233,77;Lote Estándar;28052;112;133;Disponible
+M3;Lote 18;242,86;Lote Estándar;29143;111;115;Disponible
+M3;Lote 19;241,12;Lote Estándar;28934;110;103;Disponible
+M3;Lote 20;239,55;Lote Estándar;28746;109;91;Disponible
+M3;Lote 21;238,43;Lote Estándar;28612;109;78;Disponible
+M3;Lote 22;238,17;Lote Estándar;28580;109;65;Disponible
+M3;Lote 23;238,37;Lote Estándar;28604;110;53;Disponible
+M3;Lote 24;239,29;Lote Estándar;28715;110;40;Disponible
+M3;Lote 25;240,86;Lote Estándar;28903;111;28;Disponible
+M3;Lote 26;242,97;Lote Estándar;29156;113;15;Disponible
+M4;Lote 27;155,33;Lote Estándar;18640;83;14;Disponible
+M4;Lote 28;154,84;Lote Estándar;18581;82;26;Disponible
+M4;Lote 29;154,75;Lote Estándar;18570;83;38;Disponible
+M4;Lote 30;155,40;Lote Estándar;18648;83;51;Disponible
+M4;Lote 31;156,18;Lote Estándar;18742;84;63;Disponible
+M4;Lote 32;157,33;Lote Estándar;18880;85;75;Disponible
+M4;Lote 33;158,77;Lote Estándar;19052;86;87;Vendido
+M5;Lote 34;159,37;Lote Estándar;19124;87;105;Disponible
+M5;Lote 35;159,58;Lote Estándar;19150;87;116;Disponible
+M5;Lote 36;159,80;Lote Estándar;19176;87;128;Disponible
+M5;Lote 37;160,01;Lote Estándar;19201;88;140;Disponible
+M5;Lote 38;160,23;Lote Estándar;19228;88;145;Disponible
+M5;Lote 39;160,45;Lote Estándar;19254;88;145;Disponible
+M5;Lote 40;160,67;Lote Estándar;19280;88;145;Disponible
+M5;Lote 41;160,88;Lote Estándar;19306;88;145;Disponible
+M5;Lote 42;161,10;Lote Estándar;19332;88;145;Disponible
+M5;Lote 43;161,31;Lote Estándar;19357;88;133;Disponible
+M6;Lote 44;167,41;Lote Estándar;20089;86;116;Disponible
+M6;Lote 45;166,06;Lote Estándar;19927;86;103;Disponible
+M6;Lote 46;165,05;Lote Estándar;19806;85;91;Disponible
+M6;Lote 47;164,39;Lote Estándar;19727;85;78;Separado
+M6;Lote 48;164,33;Lote Estándar;19720;85;65;Disponible
+M6;Lote 49;164,60;Lote Estándar;19752;85;53;Disponible
+M6;Lote 50;165,35;Lote Estándar;19842;86;40;Disponible
+M6;Lote 51;166,53;Lote Estándar;19984;87;28;Disponible
+M6;Lote 52;168,05;Lote Estándar;20166;88;15;Disponible
+M7;Lote 53;112,49;Lote Tiny House;13499;64;25;Disponible
+M7;Lote 54;112,20;Lote Tiny House;13464;64;32;Disponible
+M7;Lote 55;112,21;Lote Tiny House;13465;64;42;Separado
+M7;Lote 56;112,75;Lote Tiny House;13530;64;53;Disponible
+M7;Lote 57;113,37;Lote Tiny House;13604;65;64;Disponible
+M7;Lote 58;114,24;Lote Tiny House;13709;65;76;Disponible
+M7;Lote 59;115,32;Lote Tiny House;13838;66;88;Disponible
+M7;Lote 60;112,43;Lote Tiny House;6746;55;25;En Oferta
+M7;Lote 61;112,18;Lote Tiny House;13462;54;37;Separado
+M7;Lote 62;112,22;Lote Tiny House;6733;54;46;En Oferta
+M7;Lote 63;112,79;Lote Tiny House;13535;55;56;Disponible
+M7;Lote 64;113,43;Lote Tiny House;6806;55;67;En Oferta
+M7;Lote 65;114,33;Lote Tiny House;6860;56;78;En Oferta
+M7;Lote 66;115,41;Lote Tiny House;13849;57;90;Disponible
+M8;Lote 67;115,71;Lote Tiny House;13885;68;105;Disponible
+M8;Lote 68;115,75;Lote Tiny House;13890;68;117;Disponible
+M8;Lote 69;115,91;Lote Tiny House;13909;68;129;Disponible
+M8;Lote 70;116,06;Lote Tiny House;13927;68;141;Disponible
+M8;Lote 71;116,22;Lote Tiny House;13946;68;145;Disponible
+M8;Lote 72;116,38;Lote Tiny House;6983;68;145;En Oferta
+M8;Lote 73;116,54;Lote Tiny House;13985;68;145;Disponible
+M8;Lote 74;116,69;Lote Tiny House;14003;68;145;Disponible
+M8;Lote 75;116,85;Lote Tiny House;14022;68;145;Disponible
+M8;Lote 76;117,01;Lote Tiny House;14041;68;133;Disponible
+M8;Lote 77;115,79;Lote Tiny House;6947;58;106;En Oferta
+M8;Lote 78;115,78;Lote Tiny House;13894;58;118;Disponible
+M8;Lote 79;115,94;Lote Tiny House;13913;58;129;Disponible
+M8;Lote 80;116,09;Lote Tiny House;6965;58;141;En Oferta
+M8;Lote 81;116,25;Lote Tiny House;13950;58;145;Separado
+M8;Lote 82;116,41;Lote Tiny House;6985;58;145;En Oferta
+M8;Lote 83;116,57;Lote Tiny House;13988;58;145;Disponible
+M8;Lote 84;116,72;Lote Tiny House;14006;59;145;Disponible
+M8;Lote 85;116,88;Lote Tiny House;14026;59;145;Disponible
+M8;Lote 86;117,03;Lote Tiny House;14044;59;133;Disponible
+M9;Lote 87;121,33;Lote Tiny House;14560;67;116;Disponible
+M9;Lote 88;120,26;Lote Tiny House;14431;66;103;Disponible
+M9;Lote 89;119,58;Lote Tiny House;14350;66;91;Disponible
+M9;Lote 90;119,16;Lote Tiny House;14299;65;78;Disponible
+M9;Lote 91;119,20;Lote Tiny House;14304;65;65;Disponible
+M9;Lote 92;119,46;Lote Tiny House;14335;66;53;Disponible
+M9;Lote 93;120,07;Lote Tiny House;14408;66;40;Disponible
+M9;Lote 94;120,97;Lote Tiny House;14516;67;28;Disponible
+M9;Lote 95;122,11;Lote Tiny House;14653;68;15;Disponible
+M9;Lote 96;121,31;Lote Tiny House;14557;58;116;Disponible
+M9;Lote 97;120,19;Lote Tiny House;14423;57;103;Disponible
+M9;Lote 98;119,53;Lote Tiny House;14344;56;91;Disponible
+M9;Lote 99;119,16;Lote Tiny House;14299;56;78;Vendido
+M9;Lote 100;119,23;Lote Tiny House;14308;56;65;Disponible
+M9;Lote 101;119,53;Lote Tiny House;14344;56;53;Disponible
+M9;Lote 102;120,16;Lote Tiny House;14419;57;40;Disponible
+M9;Lote 103;121,08;Lote Tiny House;14530;57;28;Disponible
+M9;Lote 104;122,23;Lote Tiny House;14668;58;15;Disponible
+M10;Lote 105;224,59;Lote Tiny House;26951;33;33;Disponible
+M10;Lote 106;224,25;Lote Tiny House;26910;33;42;Disponible
+M10;Lote 107;224,50;Lote Tiny House;26940;33;52;Disponible
+M10;Lote 108;225,79;Lote Tiny House;27095;33;64;Disponible
+M10;Lote 109;227,19;Lote Tiny House;27263;33;75;Disponible
+M10;Lote 110;229,04;Lote Tiny House;27485;34;87;Disponible
+M10;Lote 111;231,24;Lote Tiny House;27749;34;97;Disponible
+M11;Lote 112;231,90;Lote Tiny House;27828;36;112;Disponible
+M11;Lote 113;231,69;Lote Tiny House;27803;35;123;Disponible
+M11;Lote 114;232,00;Lote Tiny House;27840;35;134;Disponible
+M11;Lote 115;232,32;Lote Tiny House;27878;36;145;Disponible
+M11;Lote 116;232,63;Lote Tiny House;27916;36;145;Disponible
+M11;Lote 117;232,95;Lote Tiny House;27954;36;145;Disponible
+M11;Lote 118;233,26;Lote Tiny House;27991;36;145;Disponible
+M11;Lote 119;233,58;Lote Tiny House;28030;36;145;Disponible
+M11;Lote 120;233,89;Lote Tiny House;28067;36;145;Disponible
+M11;Lote 121;234,20;Lote Tiny House;28104;36;133;Disponible
+M12;Lote 122;242,51;Lote Tiny House;29101;35;116;Disponible
+M12;Lote 123;240,04;Lote Tiny House;28805;34;103;Disponible
+M12;Lote 124;238,87;Lote Tiny House;28664;34;91;Disponible
+M12;Lote 125;238,29;Lote Tiny House;28595;34;79;Disponible
+M12;Lote 126;238,63;Lote Tiny House;28636;33;66;Separado
+M12;Lote 127;239,39;Lote Tiny House;28727;34;53;Disponible
+M12;Lote 128;240,78;Lote Tiny House;28894;34;41;Disponible
+M12;Lote 129;242,69;Lote Tiny House;29123;35;28;Disponible
+M12;Lote 130;245,02;Lote Tiny House;29402;35;15;Disponible
+M13;Lote 131;230,11;Lote Premium (Oasis);39119;3;57;Disponible
+M13;Lote 132;229,44;Lote Premium (Oasis);39005;1;63;Disponible
+M13;Lote 133;228,94;Lote Premium (Oasis);38920;1;70;Disponible
+M13;Lote 134;229,10;Lote Premium (Oasis);38947;1;78;Disponible
+M13;Lote 135;229,10;Lote Premium (Oasis);38947;1;87;Disponible
+M13;Lote 136;229,42;Lote Premium (Oasis);39001;3;97;Disponible
+M13;Lote 137;230,10;Lote Premium (Oasis);39117;5;107;Separado
+M14;Lote 138;230,01;Lote Premium (Oasis);39102;8;122;Disponible
+M14;Lote 139;232,13;Lote Premium (Oasis);39462;8;133;Disponible
+M14;Lote 140;232,44;Lote Premium (Oasis);39515;8;144;Disponible
+M14;Lote 141;232,75;Lote Premium (Oasis);39568;8;145;Disponible
+M14;Lote 142;233,07;Lote Premium (Oasis);39622;8;145;Disponible
+M14;Lote 143;233,39;Lote Premium (Oasis);39676;8;145;Disponible
+M14;Lote 144;233,71;Lote Premium (Oasis);39731;8;145;Disponible
+M14;Lote 145;234,02;Lote Premium (Oasis);39783;8;145;Disponible
+M14;Lote 146;234,33;Lote Premium (Oasis);39836;8;145;Disponible
+M14;Lote 147;234,64;Lote Premium (Oasis);39889;9;133;Disponible
+M15;Lote 148;244,74;Lote Premium (Oasis);41606;8;116;Disponible
+M15;Lote 149;244,53;Lote Premium (Oasis);41570;6;103;Disponible
+M15;Lote 150;243,68;Lote Premium (Oasis);41426;4;91;Vendido
+M15;Lote 151;242,92;Lote Premium (Oasis);41296;3;78;Disponible
+M15;Lote 152;242,60;Lote Premium (Oasis);41242;3;65;Disponible
+M15;Lote 153;242,25;Lote Premium (Oasis);41182;3;53;Separado
+M15;Lote 154;242,20;Lote Premium (Oasis);41174;3;40;Disponible
+M15;Lote 155;242,49;Lote Premium (Oasis);41223;4;28;Disponible
+M15;Lote 156;243,17;Lote Premium (Oasis);41339;5;15;Disponible
+M16;Lote 157;229,97;Lote Premium (Oasis);39095;11;39;Disponible
+M16;Lote 158;229,39;Lote Premium (Oasis);38996;11;49;Disponible
+M16;Lote 159;229,03;Lote Premium (Oasis);38935;10;59;Disponible
+M16;Lote 160;229,40;Lote Premium (Oasis);38998;10;71;Disponible
+M16;Lote 161;229,63;Lote Premium (Oasis);39037;11;82;Disponible
+M16;Lote 162;230,19;Lote Premium (Oasis);39132;11;94;Disponible
+M16;Lote 163;231,06;Lote Premium (Oasis);39280;12;106;Disponible
+M17;Lote 164;230,91;Lote Premium (Oasis);39255;13;123;Disponible
+M17;Lote 165;232,43;Lote Premium (Oasis);39513;14;135;Disponible
+M17;Lote 166;232,74;Lote Premium (Oasis);39566;14;145;Disponible
+M17;Lote 167;233,05;Lote Premium (Oasis);39618;14;145;Disponible
+M17;Lote 168;233,36;Lote Premium (Oasis);39671;14;145;Disponible
+M17;Lote 169;233,69;Lote Premium (Oasis);39727;14;145;Disponible
+M17;Lote 170;234,00;Lote Premium (Oasis);39780;14;145;Disponible
+M17;Lote 171;234,32;Lote Premium (Oasis);39834;14;145;Disponible
+M17;Lote 172;234,63;Lote Premium (Oasis);39887;14;145;Disponible
+M17;Lote 173;234,94;Lote Premium (Oasis);39940;14;133;Disponible
+M18;Lote 174;244,83;Lote Premium (Oasis);41621;14;116;Disponible
+M18;Lote 175;244,47;Lote Premium (Oasis);41560;13;103;Disponible
+M18;Lote 176;243,65;Lote Premium (Oasis);41420;12;91;Disponible
+M18;Lote 177;242,98;Lote Premium (Oasis);41307;11;78;Disponible
+M18;Lote 178;242,79;Lote Premium (Oasis);41274;11;65;Disponible
+M18;Lote 179;242,64;Lote Premium (Oasis);41249;11;53;Disponible
+M18;Lote 180;242,83;Lote Premium (Oasis);41281;11;40;Disponible
+M18;Lote 181;243,38;Lote Premium (Oasis);41375;11;28;Disponible
+M18;Lote 182;244,28;Lote Premium (Oasis);41528;12;15;Disponible
+M19;Lote 183;229,90;Lote Estándar;27588;38;26;Disponible
+M19;Lote 184;229,38;Lote Estándar;27526;38;38;Disponible
+M19;Lote 185;229,10;Lote Estándar;27492;37;50;Disponible
+M19;Lote 186;229,56;Lote Estándar;27547;37;63;Disponible
+M19;Lote 187;229,90;Lote Estándar;27588;37;75;Disponible
+M19;Lote 188;230,56;Lote Estándar;27667;38;87;Disponible
+M19;Lote 189;231,52;Lote Estándar;27782;38;99;Disponible
+M20;Lote 190;231,34;Lote Zen;27761;40;117;Disponible
+M20;Lote 191;232,59;Lote Zen;27911;41;129;Disponible
+M20;Lote 192;232,90;Lote Zen;27948;41;141;Disponible
+M20;Lote 193;233,21;Lote Zen;27985;41;145;Disponible
+M20;Lote 194;233,52;Lote Zen;28022;41;145;Disponible
+M20;Lote 195;233,85;Lote Zen;28062;41;145;Disponible
+M20;Lote 196;234,16;Lote Zen;28099;41;145;Disponible
+M20;Lote 197;234,47;Lote Zen;28136;41;145;Disponible
+M20;Lote 198;234,78;Lote Zen;28174;41;145;Disponible
+M20;Lote 199;235,10;Lote Zen;28212;41;134;Disponible
+M21;Lote 200;244,88;Lote Estándar;29386;42;116;Disponible
+M21;Lote 201;244,44;Lote Estándar;29333;41;104;Disponible
+M21;Lote 202;243,65;Lote Estándar;29238;40;91;Disponible
+M21;Lote 203;243,02;Lote Estándar;29162;39;78;Disponible
+M21;Lote 204;242,91;Lote Estándar;29149;38;65;Disponible
+M21;Lote 205;242,86;Lote Estándar;29143;38;53;Disponible
+M21;Lote 206;243,16;Lote Estándar;29179;38;40;Disponible
+M21;Lote 207;243,82;Lote Estándar;29258;39;28;Disponible
+M21;Lote 208;244,82;Lote Estándar;29378;39;15;Disponible
+M22;Lote 209;114,93;Lote Tiny House;13792;61;26;Disponible
+M22;Lote 210;114,69;Lote Tiny House;13763;60;36;Disponible
+M22;Lote 211;114,58;Lote Tiny House;13750;59;47;Disponible
+M22;Lote 212;114,85;Lote Tiny House;13782;59;58;Disponible
+M22;Lote 213;115,06;Lote Tiny House;13807;59;70;Disponible
+M22;Lote 214;115,43;Lote Tiny House;13852;60;82;Disponible
+M22;Lote 215;115,95;Lote Tiny House;13914;60;94;Disponible
+M22;Lote 216;114,92;Lote Tiny House;13790;70;20;Disponible
+M22;Lote 217;114,69;Lote Tiny House;13763;69;31;Disponible
+M22;Lote 218;114,60;Lote Tiny House;13752;69;42;Disponible
+M22;Lote 219;114,88;Lote Tiny House;13786;69;55;Disponible
+M22;Lote 220;115,11;Lote Tiny House;13813;69;67;Disponible
+M22;Lote 221;115,50;Lote Tiny House;13860;69;79;Disponible
+M22;Lote 222;116,02;Lote Tiny House;13922;70;91;Disponible
+M23;Lote 223;115,84;Lote Tiny House;13901;62;111;Disponible
+M23;Lote 224;116,36;Lote Tiny House;13963;63;123;Disponible
+M23;Lote 225;116,51;Lote Tiny House;13981;64;135;Disponible
+M23;Lote 226;116,67;Lote Tiny House;14000;64;145;Disponible
+M23;Lote 227;116,83;Lote Tiny House;14020;64;145;Disponible
+M23;Lote 228;116,99;Lote Tiny House;14039;64;145;Disponible
+M23;Lote 229;117,15;Lote Tiny House;14058;64;145;Separado
+M23;Lote 230;117,30;Lote Tiny House;14076;64;145;Disponible
+M23;Lote 231;117,46;Lote Tiny House;14095;64;145;Disponible
+M23;Lote 232;117,61;Lote Tiny House;14113;64;134;Disponible
+M23;Lote 233;115,91;Lote Tiny House;13909;71;108;Disponible
+M23;Lote 234;116,39;Lote Tiny House;13967;73;120;Disponible
+M23;Lote 235;116,54;Lote Tiny House;13985;73;132;Disponible
+M23;Lote 236;116,70;Lote Tiny House;14004;73;144;Disponible
+M23;Lote 237;116,85;Lote Tiny House;14022;74;145;Disponible
+M23;Lote 238;117,02;Lote Tiny House;14042;74;145;Disponible
+M23;Lote 239;117,17;Lote Tiny House;14060;74;145;Disponible
+M23;Lote 240;117,33;Lote Tiny House;14080;74;145;Disponible
+M23;Lote 241;117,49;Lote Tiny House;14099;74;145;Disponible
+M23;Lote 242;117,64;Lote Tiny House;14117;74;134;Disponible
+M24;Lote 243;122,46;Lote Tiny House;14695;64;116;Disponible
+M24;Lote 244;122,21;Lote Tiny House;14665;64;104;Disponible
+M24;Lote 245;121,82;Lote Tiny House;14618;62;91;Disponible
+M24;Lote 246;121,53;Lote Tiny House;14584;62;79;Disponible
+M24;Lote 247;121,50;Lote Tiny House;14580;61;65;Disponible
+M24;Lote 248;121,52;Lote Tiny House;14582;61;53;Disponible
+M24;Lote 249;121,71;Lote Tiny House;14605;61;40;Disponible
+M24;Lote 250;122,09;Lote Tiny House;14651;61;28;Disponible
+M24;Lote 251;122,62;Lote Tiny House;14714;62;15;Disponible
+M24;Lote 252;122,47;Lote Tiny House;14696;74;116;Disponible
+M24;Lote 253;122,20;Lote Tiny House;14664;73;104;Disponible
+M24;Lote 254;121,82;Lote Tiny House;14618;72;91;Disponible
+M24;Lote 255;121,54;Lote Tiny House;14585;71;79;Disponible
+M24;Lote 256;121,53;Lote Tiny House;14584;71;66;Disponible
+M24;Lote 257;121,56;Lote Tiny House;14587;70;53;Disponible
+M24;Lote 258;121,77;Lote Tiny House;14612;71;40;Disponible
+M24;Lote 259;122,16;Lote Tiny House;14659;71;28;Disponible
+M24;Lote 260;122,71;Lote Tiny House;14725;72;15;Disponible
+M25;Lote 261;158,48;Lote Estándar;19018;89;15;Disponible
+M25;Lote 262;158,20;Lote Estándar;18984;89;27;Disponible
+M25;Lote 263;158,11;Lote Estándar;18973;88;39;Disponible
+M25;Lote 264;158,54;Lote Estándar;19025;88;52;Disponible
+M25;Lote 265;158,90;Lote Estándar;19068;88;64;Disponible
+M25;Lote 266;159,48;Lote Estándar;19138;88;76;Disponible
+M25;Lote 267;160,24;Lote Estándar;19229;89;88;Disponible
+M26;Lote 268;160,06;Lote Estándar;19207;91;105;Disponible
+M26;Lote 269;160,61;Lote Estándar;19273;92;117;Disponible
+M26;Lote 270;160,83;Lote Estándar;19300;93;129;Disponible
+M26;Lote 271;161,04;Lote Estándar;19325;93;142;Disponible
+M26;Lote 272;161,26;Lote Estándar;19351;93;145;Disponible
+M26;Lote 273;161,48;Lote Estándar;19378;93;145;Disponible
+M26;Lote 274;161,70;Lote Estándar;19404;94;145;Disponible
+M26;Lote 275;161,91;Lote Estándar;19429;94;145;Disponible
+M26;Lote 276;162,13;Lote Estándar;19456;94;145;Disponible
+M26;Lote 277;162,35;Lote Estándar;19482;94;134;Disponible
+M27;Lote 278;168,95;Lote Estándar;20274;94;116;Disponible
+M27;Lote 279;168,54;Lote Estándar;20225;93;104;Disponible
+M27;Lote 280;168,04;Lote Estándar;20165;92;91;Disponible
+M27;Lote 281;167,67;Lote Estándar;20120;91;79;Disponible
+M27;Lote 282;167,69;Lote Estándar;20123;91;66;Disponible
+M27;Lote 283;167,78;Lote Estándar;20134;90;53;Disponible
+M27;Lote 284;168,12;Lote Estándar;20174;90;41;Disponible
+M27;Lote 285;168,70;Lote Estándar;20244;91;28;Disponible
+M27;Lote 286;169,50;Lote Estándar;20340;91;15;Disponible
+M28;Lote 287;229,76;Lote Ajuste (Irregular);27571;114;16;Disponible
+M28;Lote 288;229,41;Lote Ajuste (Irregular);27529;113;28;Disponible
+M28;Lote 289;229,34;Lote Ajuste (Irregular);27521;112;40;Disponible
+M28;Lote 290;230,05;Lote Ajuste (Irregular);27606;112;52;Disponible
+M28;Lote 291;230,65;Lote Ajuste (Irregular);27678;112;65;Disponible
+M28;Lote 292;231,55;Lote Ajuste (Irregular);27786;112;76;Separado
+M28;Lote 293;232,70;Lote Ajuste (Irregular);27924;113;88;Disponible
+M29;Lote 294;232,41;Lote Ajuste (Irregular);27889;115;105;Disponible
+M29;Lote 295;233,04;Lote Ajuste (Irregular);27965;116;117;Disponible
+M29;Lote 296;233,35;Lote Ajuste (Irregular);28002;118;129;Disponible
+M29;Lote 297;233,66;Lote Ajuste (Irregular);28039;118;141;Disponible
+M29;Lote 298;233,97;Lote Ajuste (Irregular);28076;118;145;Disponible
+M29;Lote 299;234,30;Lote Ajuste (Irregular);28116;118;145;Disponible
+M29;Lote 300;234,61;Lote Ajuste (Irregular);28153;118;145;Disponible
+M29;Lote 301;234,92;Lote Ajuste (Irregular);28190;118;145;Disponible
+M29;Lote 302;235,23;Lote Ajuste (Irregular);28228;119;145;Disponible
+M29;Lote 303;235,55;Lote Ajuste (Irregular);28266;119;134;Disponible
+M30;Lote 304;245,03;Lote Ajuste (Irregular);29404;119;116;Disponible
+M30;Lote 305;244,36;Lote Ajuste (Irregular);29323;118;104;Disponible
+M30;Lote 306;243,66;Lote Ajuste (Irregular);29239;117;91;Disponible
+M30;Lote 307;243,19;Lote Ajuste (Irregular);29183;116;79;Disponible
+M30;Lote 308;243,28;Lote Ajuste (Irregular);29194;115;66;Disponible
+M30;Lote 309;243,49;Lote Ajuste (Irregular);29219;115;53;Disponible
+M30;Lote 310;244,06;Lote Ajuste (Irregular);29287;115;41;Disponible
+M30;Lote 311;244,98;Lote Ajuste (Irregular);29398;115;28;Disponible
+M30;Lote 312;246,20;Lote Ajuste (Irregular);29544;116;16;Disponible

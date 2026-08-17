@@ -1,0 +1,451 @@
+ID_Elemento;Nombre;Manzana_Bloque;Tipologia;Area_m2;Dimensiones;Precio_S/;Distancia_Oasis_m;Distancia_Cochera_m;Estado
+L001;Lote 1;M1;Lote Estándar;225,54;12.16m x 18.75m;27065;106;14;Disponible
+L002;Lote 2;M1;Lote Estándar;224,67;12.16m x 18.67m;26960;106;26;Disponible
+L003;Lote 3;M1;Lote Estándar;224,37;12.16m x 18.64m;26924;106;39;Disponible
+L004;Lote 4;M1;Lote Estándar;225,14;12.18m x 18.66m;27017;107;51;Disponible
+L005;Lote 5;M1;Lote Estándar;226,12;12.18m x 18.74m;27134;108;63;Vendido
+L006;Lote 6;M1;Lote Estándar;227,66;12.18m x 18.86m;27319;109;75;Disponible
+L007;Lote 7;M1;Lote Estándar;229,65;12.18m x 19.02m;27558;110;88;Disponible
+L008;Lote 8;M2;Lote Estándar;230,62;12.07m x 19.26m;27674;112;105;Disponible
+L009;Lote 9;M2;Lote Estándar;231,26;12.07m x 19.34m;27751;112;117;Disponible
+L010;Lote 10;M2;Lote Estándar;231,58;12.07m x 19.37m;27790;112;129;Disponible
+L011;Lote 11;M2;Lote Estándar;231,89;12.07m x 19.39m;27827;112;141;Disponible
+L012;Lote 12;M2;Lote Estándar;232,20;12.07m x 19.42m;27864;112;145;Disponible
+L013;Lote 13;M2;Lote Estándar;232,53;12.07m x 19.45m;27904;112;145;Disponible
+L014;Lote 14;M2;Lote Estándar;232,84;12.07m x 19.47m;27941;113;145;Separado
+L015;Lote 15;M2;Lote Estándar;233,15;12.07m x 19.50m;27978;113;145;Disponible
+L016;Lote 16;M2;Lote Estándar;233,46;12.07m x 19.52m;28015;113;145;Disponible
+L017;Lote 17;M2;Lote Estándar;233,77;12.07m x 19.55m;28052;112;133;Disponible
+L018;Lote 18;M3;Lote Estándar;242,86;12.54m x 19.53m;29143;111;115;Disponible
+L019;Lote 19;M3;Lote Estándar;241,12;12.54m x 19.42m;28934;110;103;Disponible
+L020;Lote 20;M3;Lote Estándar;239,55;12.54m x 19.29m;28746;109;91;Disponible
+L021;Lote 21;M3;Lote Estándar;238,43;12.54m x 19.19m;28612;109;78;Disponible
+L022;Lote 22;M3;Lote Estándar;238,17;12.56m x 19.15m;28580;109;65;Disponible
+L023;Lote 23;M3;Lote Estándar;238,37;12.56m x 19.16m;28604;110;53;Disponible
+L024;Lote 24;M3;Lote Estándar;239,29;12.56m x 19.22m;28715;110;40;Disponible
+L025;Lote 25;M3;Lote Estándar;240,86;12.56m x 19.34m;28903;111;28;Disponible
+L026;Lote 26;M3;Lote Estándar;242,97;12.56m x 19.51m;29156;113;15;Disponible
+L027;Lote 27;M4;Lote Estándar;155,33;12.16m x 12.93m;18640;83;14;Disponible
+L028;Lote 28;M4;Lote Estándar;154,84;12.16m x 12.88m;18581;82;26;Disponible
+L029;Lote 29;M4;Lote Estándar;154,75;12.16m x 12.86m;18570;83;38;Disponible
+L030;Lote 30;M4;Lote Estándar;155,40;12.19m x 12.87m;18648;83;51;Disponible
+L031;Lote 31;M4;Lote Estándar;156,18;12.19m x 12.92m;18742;84;63;Disponible
+L032;Lote 32;M4;Lote Estándar;157,33;12.19m x 13.01m;18880;85;75;Disponible
+L033;Lote 33;M4;Lote Estándar;158,77;12.19m x 13.12m;19052;86;87;Vendido
+L034;Lote 34;M5;Lote Estándar;159,37;12.07m x 13.28m;19124;87;105;Disponible
+L035;Lote 35;M5;Lote Estándar;159,58;12.07m x 13.34m;19150;87;116;Disponible
+L036;Lote 36;M5;Lote Estándar;159,80;12.07m x 13.36m;19176;87;128;Disponible
+L037;Lote 37;M5;Lote Estándar;160,01;12.07m x 13.38m;19201;88;140;Disponible
+L038;Lote 38;M5;Lote Estándar;160,23;12.07m x 13.39m;19228;88;145;Disponible
+L039;Lote 39;M5;Lote Estándar;160,45;12.07m x 13.41m;19254;88;145;Disponible
+L040;Lote 40;M5;Lote Estándar;160,67;12.07m x 13.43m;19280;88;145;Disponible
+L041;Lote 41;M5;Lote Estándar;160,88;12.07m x 13.45m;19306;88;145;Disponible
+L042;Lote 42;M5;Lote Estándar;161,10;12.07m x 13.46m;19332;88;145;Disponible
+L043;Lote 43;M5;Lote Estándar;161,31;12.07m x 13.48m;19357;88;133;Disponible
+L044;Lote 44;M6;Lote Estándar;167,41;12.55m x 13.47m;20089;86;116;Disponible
+L045;Lote 45;M6;Lote Estándar;166,06;12.55m x 13.39m;19927;86;103;Disponible
+L046;Lote 46;M6;Lote Estándar;165,05;12.55m x 13.30m;19806;85;91;Disponible
+L047;Lote 47;M6;Lote Estándar;164,39;12.55m x 13.24m;19727;85;78;Separado
+L048;Lote 48;M6;Lote Estándar;164,33;12.57m x 13.20m;19720;85;65;Disponible
+L049;Lote 49;M6;Lote Estándar;164,60;12.57m x 13.21m;19752;85;53;Disponible
+L050;Lote 50;M6;Lote Estándar;165,35;12.57m x 13.26m;19842;86;40;Disponible
+L051;Lote 51;M6;Lote Estándar;166,53;12.57m x 13.34m;19984;87;28;Disponible
+L052;Lote 52;M6;Lote Estándar;168,05;12.57m x 13.45m;20166;88;15;Disponible
+L053;Lote 53;M7;Lote Tiny House;112,49;12.16m x 9.38m;13499;64;25;Disponible
+L054;Lote 54;M7;Lote Tiny House;112,20;12.16m x 9.34m;13464;64;32;Disponible
+L055;Lote 55;M7;Lote Tiny House;112,21;12.16m x 9.32m;13465;64;42;Separado
+L056;Lote 56;M7;Lote Tiny House;112,75;12.19m x 9.33m;13530;64;53;Disponible
+L057;Lote 57;M7;Lote Tiny House;113,37;12.19m x 9.37m;13604;65;64;Disponible
+L058;Lote 58;M7;Lote Tiny House;114,24;12.19m x 9.43m;13709;65;76;Disponible
+L059;Lote 59;M7;Lote Tiny House;115,32;12.19m x 9.51m;13838;66;88;Disponible
+L060;Lote 60;M7;Lote Tiny House;112,43;12.17m x 9.38m;6746;55;25;En Oferta
+L061;Lote 61;M7;Lote Tiny House;112,18;12.17m x 9.34m;13462;54;37;Separado
+L062;Lote 62;M7;Lote Tiny House;112,22;12.17m x 9.32m;6733;54;46;En Oferta
+L063;Lote 63;M7;Lote Tiny House;112,79;12.19m x 9.33m;13535;55;56;Disponible
+L064;Lote 64;M7;Lote Tiny House;113,43;12.19m x 9.37m;6806;55;67;En Oferta
+L065;Lote 65;M7;Lote Tiny House;114,33;12.19m x 9.43m;6860;56;78;En Oferta
+L066;Lote 66;M7;Lote Tiny House;115,41;12.19m x 9.51m;13849;57;90;Disponible
+L067;Lote 67;M8;Lote Tiny House;115,71;12.07m x 9.63m;13885;68;105;Disponible
+L068;Lote 68;M8;Lote Tiny House;115,75;12.08m x 9.67m;13890;68;117;Disponible
+L069;Lote 69;M8;Lote Tiny House;115,91;12.08m x 9.68m;13909;68;129;Disponible
+L070;Lote 70;M8;Lote Tiny House;116,06;12.08m x 9.70m;13927;68;141;Disponible
+L071;Lote 71;M8;Lote Tiny House;116,22;12.08m x 9.71m;13946;68;145;Disponible
+L072;Lote 72;M8;Lote Tiny House;116,38;12.08m x 9.72m;6983;68;145;En Oferta
+L073;Lote 73;M8;Lote Tiny House;116,54;12.08m x 9.74m;13985;68;145;Disponible
+L074;Lote 74;M8;Lote Tiny House;116,69;12.08m x 9.75m;14003;68;145;Disponible
+L075;Lote 75;M8;Lote Tiny House;116,85;12.08m x 9.76m;14022;68;145;Disponible
+L076;Lote 76;M8;Lote Tiny House;117,01;12.08m x 9.77m;14041;68;133;Disponible
+L077;Lote 77;M8;Lote Tiny House;115,79;12.07m x 9.63m;6947;58;106;En Oferta
+L078;Lote 78;M8;Lote Tiny House;115,78;12.08m x 9.67m;13894;58;118;Disponible
+L079;Lote 79;M8;Lote Tiny House;115,94;12.08m x 9.68m;13913;58;129;Disponible
+L080;Lote 80;M8;Lote Tiny House;116,09;12.08m x 9.70m;6965;58;141;En Oferta
+L081;Lote 81;M8;Lote Tiny House;116,25;12.08m x 9.71m;13950;58;145;Separado
+L082;Lote 82;M8;Lote Tiny House;116,41;12.08m x 9.72m;6985;58;145;En Oferta
+L083;Lote 83;M8;Lote Tiny House;116,57;12.08m x 9.74m;13988;58;145;Disponible
+L084;Lote 84;M8;Lote Tiny House;116,72;12.08m x 9.75m;14006;59;145;Disponible
+L085;Lote 85;M8;Lote Tiny House;116,88;12.08m x 9.76m;14026;59;145;Disponible
+L086;Lote 86;M8;Lote Tiny House;117,03;12.08m x 9.77m;14044;59;133;Disponible
+L087;Lote 87;M9;Lote Tiny House;121,33;12.56m x 9.76m;14560;67;116;Disponible
+L088;Lote 88;M9;Lote Tiny House;120,26;12.56m x 9.71m;14431;66;103;Disponible
+L089;Lote 89;M9;Lote Tiny House;119,58;12.56m x 9.64m;14350;66;91;Disponible
+L090;Lote 90;M9;Lote Tiny House;119,16;12.56m x 9.60m;14299;65;78;Disponible
+L091;Lote 91;M9;Lote Tiny House;119,20;12.58m x 9.57m;14304;65;65;Disponible
+L092;Lote 92;M9;Lote Tiny House;119,46;12.58m x 9.58m;14335;66;53;Disponible
+L093;Lote 93;M9;Lote Tiny House;120,07;12.58m x 9.61m;14408;66;40;Disponible
+L094;Lote 94;M9;Lote Tiny House;120,97;12.58m x 9.67m;14516;67;28;Disponible
+L095;Lote 95;M9;Lote Tiny House;122,11;12.58m x 9.75m;14653;68;15;Disponible
+L096;Lote 96;M9;Lote Tiny House;121,31;12.56m x 9.76m;14557;58;116;Disponible
+L097;Lote 97;M9;Lote Tiny House;120,19;12.57m x 9.71m;14423;57;103;Disponible
+L098;Lote 98;M9;Lote Tiny House;119,53;12.57m x 9.64m;14344;56;91;Disponible
+L099;Lote 99;M9;Lote Tiny House;119,16;12.57m x 9.60m;14299;56;78;Vendido
+L100;Lote 100;M9;Lote Tiny House;119,23;12.58m x 9.57m;14308;56;65;Disponible
+L101;Lote 101;M9;Lote Tiny House;119,53;12.58m x 9.58m;14344;56;53;Disponible
+L102;Lote 102;M9;Lote Tiny House;120,16;12.58m x 9.61m;14419;57;40;Disponible
+L103;Lote 103;M9;Lote Tiny House;121,08;12.58m x 9.67m;14530;57;28;Disponible
+L104;Lote 104;M9;Lote Tiny House;122,23;12.58m x 9.75m;14668;58;15;Disponible
+L105;Lote 105;M10;Lote Tiny House;224,59;12.17m x 18.75m;26951;33;33;Disponible
+L106;Lote 106;M10;Lote Tiny House;224,25;12.17m x 18.67m;26910;33;42;Disponible
+L107;Lote 107;M10;Lote Tiny House;224,50;12.17m x 18.64m;26940;33;52;Disponible
+L108;Lote 108;M10;Lote Tiny House;225,79;12.19m x 18.66m;27095;33;64;Disponible
+L109;Lote 109;M10;Lote Tiny House;227,19;12.19m x 18.74m;27263;33;75;Disponible
+L110;Lote 110;M10;Lote Tiny House;229,04;12.19m x 18.86m;27485;34;87;Disponible
+L111;Lote 111;M10;Lote Tiny House;231,24;12.19m x 19.02m;27749;34;97;Disponible
+L112;Lote 112;M11;Lote Tiny House;231,90;12.08m x 19.26m;27828;36;112;Disponible
+L113;Lote 113;M11;Lote Tiny House;231,69;12.08m x 19.34m;27803;35;123;Disponible
+L114;Lote 114;M11;Lote Tiny House;232,00;12.08m x 19.37m;27840;35;134;Disponible
+L115;Lote 115;M11;Lote Tiny House;232,32;12.08m x 19.39m;27878;36;145;Disponible
+L116;Lote 116;M11;Lote Tiny House;232,63;12.08m x 19.42m;27916;36;145;Disponible
+L117;Lote 117;M11;Lote Tiny House;232,95;12.08m x 19.45m;27954;36;145;Disponible
+L118;Lote 118;M11;Lote Tiny House;233,26;12.08m x 19.47m;27991;36;145;Disponible
+L119;Lote 119;M11;Lote Tiny House;233,58;12.08m x 19.50m;28030;36;145;Disponible
+L120;Lote 120;M11;Lote Tiny House;233,89;12.08m x 19.52m;28067;36;145;Disponible
+L121;Lote 121;M11;Lote Tiny House;234,20;12.08m x 19.55m;28104;36;133;Disponible
+L122;Lote 122;M12;Lote Tiny House;242,51;12.57m x 19.53m;29101;35;116;Disponible
+L123;Lote 123;M12;Lote Tiny House;240,04;12.58m x 19.42m;28805;34;103;Disponible
+L124;Lote 124;M12;Lote Tiny House;238,87;12.58m x 19.29m;28664;34;91;Disponible
+L125;Lote 125;M12;Lote Tiny House;238,29;12.58m x 19.19m;28595;34;79;Disponible
+L126;Lote 126;M12;Lote Tiny House;238,63;12.59m x 19.15m;28636;33;66;Separado
+L127;Lote 127;M12;Lote Tiny House;239,39;12.59m x 19.15m;28727;34;53;Disponible
+L128;Lote 128;M12;Lote Tiny House;240,78;12.59m x 19.22m;28894;34;41;Disponible
+L129;Lote 129;M12;Lote Tiny House;242,69;12.59m x 19.34m;29123;35;28;Disponible
+L130;Lote 130;M12;Lote Tiny House;245,02;12.59m x 19.50m;29402;35;15;Disponible
+L131;Lote 131;M13;Lote Premium (Oasis);230,11;12.20m x 18.93m;39119;3;57;Disponible
+L132;Lote 132;M13;Lote Premium (Oasis);229,44;12.20m x 18.91m;39005;1;63;Disponible
+L133;Lote 133;M13;Lote Premium (Oasis);228,94;12.20m x 18.90m;38920;1;70;Disponible
+L134;Lote 134;M13;Lote Premium (Oasis);229,10;12.22m x 18.93m;38947;1;78;Disponible
+L135;Lote 135;M13;Lote Premium (Oasis);229,10;12.22m x 18.98m;38947;1;87;Disponible
+L136;Lote 136;M13;Lote Premium (Oasis);229,42;12.22m x 19.05m;39001;3;97;Disponible
+L137;Lote 137;M13;Lote Premium (Oasis);230,10;12.22m x 19.15m;39117;5;107;Separado
+L138;Lote 138;M14;Lote Premium (Oasis);230,01;12.09m x 19.29m;39102;8;122;Disponible
+L139;Lote 139;M14;Lote Premium (Oasis);232,13;12.10m x 19.34m;39462;8;133;Disponible
+L140;Lote 140;M14;Lote Premium (Oasis);232,44;12.10m x 19.37m;39515;8;144;Disponible
+L141;Lote 141;M14;Lote Premium (Oasis);232,75;12.10m x 19.39m;39568;8;145;Disponible
+L142;Lote 142;M14;Lote Premium (Oasis);233,07;12.10m x 19.42m;39622;8;145;Disponible
+L143;Lote 143;M14;Lote Premium (Oasis);233,39;12.10m x 19.45m;39676;8;145;Disponible
+L144;Lote 144;M14;Lote Premium (Oasis);233,71;12.10m x 19.47m;39731;8;145;Disponible
+L145;Lote 145;M14;Lote Premium (Oasis);234,02;12.10m x 19.50m;39783;8;145;Disponible
+L146;Lote 146;M14;Lote Premium (Oasis);234,33;12.10m x 19.52m;39836;8;145;Disponible
+L147;Lote 147;M14;Lote Premium (Oasis);234,64;12.10m x 19.55m;39889;9;133;Disponible
+L148;Lote 148;M15;Lote Premium (Oasis);244,74;12.55m x 19.55m;41606;8;116;Disponible
+L149;Lote 149;M15;Lote Premium (Oasis);244,53;12.56m x 19.51m;41570;6;103;Disponible
+L150;Lote 150;M15;Lote Premium (Oasis);243,68;12.56m x 19.45m;41426;4;91;Vendido
+L151;Lote 151;M15;Lote Premium (Oasis);242,92;12.56m x 19.42m;41296;3;78;Disponible
+L152;Lote 152;M15;Lote Premium (Oasis);242,60;12.57m x 19.41m;41242;3;65;Disponible
+L153;Lote 153;M15;Lote Premium (Oasis);242,25;12.57m x 19.43m;41182;3;53;Separado
+L154;Lote 154;M15;Lote Premium (Oasis);242,20;12.57m x 19.47m;41174;3;40;Disponible
+L155;Lote 155;M15;Lote Premium (Oasis);242,49;12.57m x 19.55m;41223;4;28;Disponible
+L156;Lote 156;M15;Lote Premium (Oasis);243,17;12.57m x 19.64m;41339;5;15;Disponible
+L157;Lote 157;M16;Lote Premium (Oasis);229,97;12.20m x 18.93m;39095;11;39;Disponible
+L158;Lote 158;M16;Lote Premium (Oasis);229,39;12.20m x 18.91m;38996;11;49;Disponible
+L159;Lote 159;M16;Lote Premium (Oasis);229,03;12.20m x 18.90m;38935;10;59;Disponible
+L160;Lote 160;M16;Lote Premium (Oasis);229,40;12.22m x 18.93m;38998;10;71;Disponible
+L161;Lote 161;M16;Lote Premium (Oasis);229,63;12.22m x 18.98m;39037;11;82;Disponible
+L162;Lote 162;M16;Lote Premium (Oasis);230,19;12.22m x 19.05m;39132;11;94;Disponible
+L163;Lote 163;M16;Lote Premium (Oasis);231,06;12.22m x 19.15m;39280;12;106;Disponible
+L164;Lote 164;M17;Lote Premium (Oasis);230,91;12.10m x 19.29m;39255;13;123;Disponible
+L165;Lote 165;M17;Lote Premium (Oasis);232,43;12.10m x 19.34m;39513;14;135;Disponible
+L166;Lote 166;M17;Lote Premium (Oasis);232,74;12.10m x 19.37m;39566;14;145;Disponible
+L167;Lote 167;M17;Lote Premium (Oasis);233,05;12.10m x 19.39m;39618;14;145;Disponible
+L168;Lote 168;M17;Lote Premium (Oasis);233,36;12.10m x 19.42m;39671;14;145;Disponible
+L169;Lote 169;M17;Lote Premium (Oasis);233,69;12.10m x 19.45m;39727;14;145;Disponible
+L170;Lote 170;M17;Lote Premium (Oasis);234,00;12.10m x 19.47m;39780;14;145;Disponible
+L171;Lote 171;M17;Lote Premium (Oasis);234,32;12.10m x 19.50m;39834;14;145;Disponible
+L172;Lote 172;M17;Lote Premium (Oasis);234,63;12.10m x 19.52m;39887;14;145;Disponible
+L173;Lote 173;M17;Lote Premium (Oasis);234,94;12.10m x 19.55m;39940;14;133;Disponible
+L174;Lote 174;M18;Lote Premium (Oasis);244,83;12.57m x 19.55m;41621;14;116;Disponible
+L175;Lote 175;M18;Lote Premium (Oasis);244,47;12.57m x 19.51m;41560;13;103;Disponible
+L176;Lote 176;M18;Lote Premium (Oasis);243,65;12.57m x 19.45m;41420;12;91;Disponible
+L177;Lote 177;M18;Lote Premium (Oasis);242,98;12.57m x 19.42m;41307;11;78;Disponible
+L178;Lote 178;M18;Lote Premium (Oasis);242,79;12.58m x 19.41m;41274;11;65;Disponible
+L179;Lote 179;M18;Lote Premium (Oasis);242,64;12.58m x 19.43m;41249;11;53;Disponible
+L180;Lote 180;M18;Lote Premium (Oasis);242,83;12.58m x 19.47m;41281;11;40;Disponible
+L181;Lote 181;M18;Lote Premium (Oasis);243,38;12.58m x 19.55m;41375;11;28;Disponible
+L182;Lote 182;M18;Lote Premium (Oasis);244,28;12.58m x 19.64m;41528;12;15;Disponible
+L183;Lote 183;M19;Lote Estándar;229,90;12.20m x 18.93m;27588;38;26;Disponible
+L184;Lote 184;M19;Lote Estándar;229,38;12.20m x 18.91m;27526;38;38;Disponible
+L185;Lote 185;M19;Lote Estándar;229,10;12.20m x 18.90m;27492;37;50;Disponible
+L186;Lote 186;M19;Lote Estándar;229,56;12.23m x 18.93m;27547;37;63;Disponible
+L187;Lote 187;M19;Lote Estándar;229,90;12.23m x 18.98m;27588;37;75;Disponible
+L188;Lote 188;M19;Lote Estándar;230,56;12.23m x 19.05m;27667;38;87;Disponible
+L189;Lote 189;M19;Lote Estándar;231,52;12.22m x 19.15m;27782;38;99;Disponible
+L190;Lote 190;M20;Lote Zen;231,34;12.11m x 19.29m;27761;40;117;Disponible
+L191;Lote 191;M20;Lote Zen;232,59;12.11m x 19.34m;27911;41;129;Disponible
+L192;Lote 192;M20;Lote Zen;232,90;12.11m x 19.37m;27948;41;141;Disponible
+L193;Lote 193;M20;Lote Zen;233,21;12.11m x 19.39m;27985;41;145;Disponible
+L194;Lote 194;M20;Lote Zen;233,52;12.11m x 19.42m;28022;41;145;Disponible
+L195;Lote 195;M20;Lote Zen;233,85;12.11m x 19.45m;28062;41;145;Disponible
+L196;Lote 196;M20;Lote Zen;234,16;12.11m x 19.47m;28099;41;145;Disponible
+L197;Lote 197;M20;Lote Zen;234,47;12.11m x 19.50m;28136;41;145;Disponible
+L198;Lote 198;M20;Lote Zen;234,78;12.11m x 19.52m;28174;41;145;Disponible
+L199;Lote 199;M20;Lote Zen;235,10;12.11m x 19.55m;28212;41;134;Disponible
+L200;Lote 200;M21;Lote Estándar;244,88;12.57m x 19.55m;29386;42;116;Disponible
+L201;Lote 201;M21;Lote Estándar;244,44;12.57m x 19.51m;29333;41;104;Disponible
+L202;Lote 202;M21;Lote Estándar;243,65;12.57m x 19.45m;29238;40;91;Disponible
+L203;Lote 203;M21;Lote Estándar;243,02;12.57m x 19.42m;29162;39;78;Disponible
+L204;Lote 204;M21;Lote Estándar;242,91;12.59m x 19.41m;29149;38;65;Disponible
+L205;Lote 205;M21;Lote Estándar;242,86;12.59m x 19.43m;29143;38;53;Disponible
+L206;Lote 206;M21;Lote Estándar;243,16;12.59m x 19.47m;29179;38;40;Disponible
+L207;Lote 207;M21;Lote Estándar;243,82;12.59m x 19.55m;29258;39;28;Disponible
+L208;Lote 208;M21;Lote Estándar;244,82;12.59m x 19.64m;29378;39;15;Disponible
+L209;Lote 209;M22;Lote Tiny House;114,93;12.20m x 9.47m;13792;61;26;Disponible
+L210;Lote 210;M22;Lote Tiny House;114,69;12.20m x 9.45m;13763;60;36;Disponible
+L211;Lote 211;M22;Lote Tiny House;114,58;12.20m x 9.45m;13750;59;47;Disponible
+L212;Lote 212;M22;Lote Tiny House;114,85;12.23m x 9.46m;13782;59;58;Disponible
+L213;Lote 213;M22;Lote Tiny House;115,06;12.23m x 9.49m;13807;59;70;Disponible
+L214;Lote 214;M22;Lote Tiny House;115,43;12.23m x 9.53m;13852;60;82;Disponible
+L215;Lote 215;M22;Lote Tiny House;115,95;12.23m x 9.57m;13914;60;94;Disponible
+L216;Lote 216;M22;Lote Tiny House;114,92;12.20m x 9.47m;13790;70;20;Disponible
+L217;Lote 217;M22;Lote Tiny House;114,69;12.20m x 9.45m;13763;69;31;Disponible
+L218;Lote 218;M22;Lote Tiny House;114,60;12.20m x 9.45m;13752;69;42;Disponible
+L219;Lote 219;M22;Lote Tiny House;114,88;12.23m x 9.46m;13786;69;55;Disponible
+L220;Lote 220;M22;Lote Tiny House;115,11;12.23m x 9.49m;13813;69;67;Disponible
+L221;Lote 221;M22;Lote Tiny House;115,50;12.23m x 9.53m;13860;69;79;Disponible
+L222;Lote 222;M22;Lote Tiny House;116,02;12.23m x 9.57m;13922;70;91;Disponible
+L223;Lote 223;M23;Lote Tiny House;115,84;12.11m x 9.64m;13901;62;111;Disponible
+L224;Lote 224;M23;Lote Tiny House;116,36;12.11m x 9.67m;13963;63;123;Disponible
+L225;Lote 225;M23;Lote Tiny House;116,51;12.11m x 9.68m;13981;64;135;Disponible
+L226;Lote 226;M23;Lote Tiny House;116,67;12.11m x 9.70m;14000;64;145;Disponible
+L227;Lote 227;M23;Lote Tiny House;116,83;12.11m x 9.71m;14020;64;145;Disponible
+L228;Lote 228;M23;Lote Tiny House;116,99;12.11m x 9.72m;14039;64;145;Disponible
+L229;Lote 229;M23;Lote Tiny House;117,15;12.11m x 9.74m;14058;64;145;Separado
+L230;Lote 230;M23;Lote Tiny House;117,30;12.11m x 9.75m;14076;64;145;Disponible
+L231;Lote 231;M23;Lote Tiny House;117,46;12.11m x 9.76m;14095;64;145;Disponible
+L232;Lote 232;M23;Lote Tiny House;117,61;12.11m x 9.77m;14113;64;134;Disponible
+L233;Lote 233;M23;Lote Tiny House;115,91;12.11m x 9.64m;13909;71;108;Disponible
+L234;Lote 234;M23;Lote Tiny House;116,39;12.11m x 9.67m;13967;73;120;Disponible
+L235;Lote 235;M23;Lote Tiny House;116,54;12.11m x 9.68m;13985;73;132;Disponible
+L236;Lote 236;M23;Lote Tiny House;116,70;12.11m x 9.70m;14004;73;144;Disponible
+L237;Lote 237;M23;Lote Tiny House;116,85;12.11m x 9.71m;14022;74;145;Disponible
+L238;Lote 238;M23;Lote Tiny House;117,02;12.11m x 9.72m;14042;74;145;Disponible
+L239;Lote 239;M23;Lote Tiny House;117,17;12.11m x 9.74m;14060;74;145;Disponible
+L240;Lote 240;M23;Lote Tiny House;117,33;12.11m x 9.75m;14080;74;145;Disponible
+L241;Lote 241;M23;Lote Tiny House;117,49;12.11m x 9.76m;14099;74;145;Disponible
+L242;Lote 242;M23;Lote Tiny House;117,64;12.11m x 9.77m;14117;74;134;Disponible
+L243;Lote 243;M24;Lote Tiny House;122,46;12.58m x 9.78m;14695;64;116;Disponible
+L244;Lote 244;M24;Lote Tiny House;122,21;12.58m x 9.75m;14665;64;104;Disponible
+L245;Lote 245;M24;Lote Tiny House;121,82;12.58m x 9.73m;14618;62;91;Disponible
+L246;Lote 246;M24;Lote Tiny House;121,53;12.58m x 9.71m;14584;62;79;Disponible
+L247;Lote 247;M24;Lote Tiny House;121,50;12.59m x 9.70m;14580;61;65;Disponible
+L248;Lote 248;M24;Lote Tiny House;121,52;12.59m x 9.71m;14582;61;53;Disponible
+L249;Lote 249;M24;Lote Tiny House;121,71;12.59m x 9.74m;14605;61;40;Disponible
+L250;Lote 250;M24;Lote Tiny House;122,09;12.59m x 9.77m;14651;61;28;Disponible
+L251;Lote 251;M24;Lote Tiny House;122,62;12.59m x 9.82m;14714;62;15;Disponible
+L252;Lote 252;M24;Lote Tiny House;122,47;12.58m x 9.78m;14696;74;116;Disponible
+L253;Lote 253;M24;Lote Tiny House;122,20;12.58m x 9.75m;14664;73;104;Disponible
+L254;Lote 254;M24;Lote Tiny House;121,82;12.58m x 9.73m;14618;72;91;Disponible
+L255;Lote 255;M24;Lote Tiny House;121,54;12.58m x 9.71m;14585;71;79;Disponible
+L256;Lote 256;M24;Lote Tiny House;121,53;12.59m x 9.70m;14584;71;66;Disponible
+L257;Lote 257;M24;Lote Tiny House;121,56;12.59m x 9.71m;14587;70;53;Disponible
+L258;Lote 258;M24;Lote Tiny House;121,77;12.59m x 9.74m;14612;71;40;Disponible
+L259;Lote 259;M24;Lote Tiny House;122,16;12.59m x 9.77m;14659;71;28;Disponible
+L260;Lote 260;M24;Lote Tiny House;122,71;12.59m x 9.82m;14725;72;15;Disponible
+L261;Lote 261;M25;Lote Estándar;158,48;12.21m x 13.06m;19018;89;15;Disponible
+L262;Lote 262;M25;Lote Estándar;158,20;12.21m x 13.04m;18984;89;27;Disponible
+L263;Lote 263;M25;Lote Estándar;158,11;12.21m x 13.04m;18973;88;39;Disponible
+L264;Lote 264;M25;Lote Estándar;158,54;12.23m x 13.05m;19025;88;52;Disponible
+L265;Lote 265;M25;Lote Estándar;158,90;12.23m x 13.09m;19068;88;64;Disponible
+L266;Lote 266;M25;Lote Estándar;159,48;12.23m x 13.14m;19138;88;76;Disponible
+L267;Lote 267;M25;Lote Estándar;160,24;12.23m x 13.20m;19229;89;88;Disponible
+L268;Lote 268;M26;Lote Estándar;160,06;12.12m x 13.30m;19207;91;105;Disponible
+L269;Lote 269;M26;Lote Estándar;160,61;12.12m x 13.34m;19273;92;117;Disponible
+L270;Lote 270;M26;Lote Estándar;160,83;12.12m x 13.36m;19300;93;129;Disponible
+L271;Lote 271;M26;Lote Estándar;161,04;12.12m x 13.38m;19325;93;142;Disponible
+L272;Lote 272;M26;Lote Estándar;161,26;12.12m x 13.39m;19351;93;145;Disponible
+L273;Lote 273;M26;Lote Estándar;161,48;12.12m x 13.41m;19378;93;145;Disponible
+L274;Lote 274;M26;Lote Estándar;161,70;12.12m x 13.43m;19404;94;145;Disponible
+L275;Lote 275;M26;Lote Estándar;161,91;12.12m x 13.45m;19429;94;145;Disponible
+L276;Lote 276;M26;Lote Estándar;162,13;12.12m x 13.46m;19456;94;145;Disponible
+L277;Lote 277;M26;Lote Estándar;162,35;12.12m x 13.48m;19482;94;134;Disponible
+L278;Lote 278;M27;Lote Estándar;168,95;12.59m x 13.49m;20274;94;116;Disponible
+L279;Lote 279;M27;Lote Estándar;168,54;12.59m x 13.45m;20225;93;104;Disponible
+L280;Lote 280;M27;Lote Estándar;168,04;12.59m x 13.42m;20165;92;91;Disponible
+L281;Lote 281;M27;Lote Estándar;167,67;12.59m x 13.39m;20120;91;79;Disponible
+L282;Lote 282;M27;Lote Estándar;167,69;12.60m x 13.38m;20123;91;66;Disponible
+L283;Lote 283;M27;Lote Estándar;167,78;12.60m x 13.40m;20134;90;53;Disponible
+L284;Lote 284;M27;Lote Estándar;168,12;12.60m x 13.43m;20174;90;41;Disponible
+L285;Lote 285;M27;Lote Estándar;168,70;12.60m x 13.48m;20244;91;28;Disponible
+L286;Lote 286;M27;Lote Estándar;169,50;12.60m x 13.55m;20340;91;15;Disponible
+L287;Lote 287;M28;Lote Ajuste (Irregular);229,76;12.21m x 18.93m;27571;114;16;Disponible
+L288;Lote 288;M28;Lote Ajuste (Irregular);229,41;12.21m x 18.91m;27529;113;28;Disponible
+L289;Lote 289;M28;Lote Ajuste (Irregular);229,34;12.21m x 18.90m;27521;112;40;Disponible
+L290;Lote 290;M28;Lote Ajuste (Irregular);230,05;12.23m x 18.93m;27606;112;52;Disponible
+L291;Lote 291;M28;Lote Ajuste (Irregular);230,65;12.23m x 18.98m;27678;112;65;Disponible
+L292;Lote 292;M28;Lote Ajuste (Irregular);231,55;12.23m x 19.05m;27786;112;76;Separado
+L293;Lote 293;M28;Lote Ajuste (Irregular);232,70;12.23m x 19.15m;27924;113;88;Disponible
+L294;Lote 294;M29;Lote Ajuste (Irregular);232,41;12.12m x 19.29m;27889;115;105;Disponible
+L295;Lote 295;M29;Lote Ajuste (Irregular);233,04;12.12m x 19.34m;27965;116;117;Disponible
+L296;Lote 296;M29;Lote Ajuste (Irregular);233,35;12.12m x 19.37m;28002;118;129;Disponible
+L297;Lote 297;M29;Lote Ajuste (Irregular);233,66;12.12m x 19.39m;28039;118;141;Disponible
+L298;Lote 298;M29;Lote Ajuste (Irregular);233,97;12.12m x 19.42m;28076;118;145;Disponible
+L299;Lote 299;M29;Lote Ajuste (Irregular);234,30;12.12m x 19.45m;28116;118;145;Disponible
+L300;Lote 300;M29;Lote Ajuste (Irregular);234,61;12.12m x 19.47m;28153;118;145;Disponible
+L301;Lote 301;M29;Lote Ajuste (Irregular);234,92;12.12m x 19.50m;28190;118;145;Disponible
+L302;Lote 302;M29;Lote Ajuste (Irregular);235,23;12.12m x 19.52m;28228;119;145;Disponible
+L303;Lote 303;M29;Lote Ajuste (Irregular);235,55;12.12m x 19.55m;28266;119;134;Disponible
+L304;Lote 304;M30;Lote Ajuste (Irregular);245,03;12.59m x 19.55m;29404;119;116;Disponible
+L305;Lote 305;M30;Lote Ajuste (Irregular);244,36;12.59m x 19.51m;29323;118;104;Disponible
+L306;Lote 306;M30;Lote Ajuste (Irregular);243,66;12.59m x 19.46m;29239;117;91;Disponible
+L307;Lote 307;M30;Lote Ajuste (Irregular);243,19;12.59m x 19.42m;29183;116;79;Disponible
+L308;Lote 308;M30;Lote Ajuste (Irregular);243,28;12.61m x 19.41m;29194;115;66;Disponible
+L309;Lote 309;M30;Lote Ajuste (Irregular);243,49;12.61m x 19.42m;29219;115;53;Disponible
+L310;Lote 310;M30;Lote Ajuste (Irregular);244,06;12.61m x 19.47m;29287;115;41;Disponible
+L311;Lote 311;M30;Lote Ajuste (Irregular);244,98;12.61m x 19.55m;29398;115;28;Disponible
+L312;Lote 312;M30;Lote Ajuste (Irregular);246,20;12.61m x 19.64m;29544;116;16;Disponible
+P001;P1;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P002;P2;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P003;P3;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P004;P4;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P005;P5;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P006;P6;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P007;P7;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P008;P8;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P009;P9;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P010;P10;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P011;P11;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P012;P12;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P013;P13;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P014;P14;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P015;P15;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P016;P16;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P017;P17;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P018;P18;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P019;P19;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P020;P20;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P021;P21;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P022;P22;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P023;P23;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P024;P24;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P025;P25;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P026;P26;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P027;P27;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P028;P28;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P029;P29;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P030;P30;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P031;P31;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P032;P32;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P033;P33;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P034;P34;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P035;P35;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P036;P36;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P037;P37;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P038;P38;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P039;P39;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P040;P40;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P041;P41;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P042;P42;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P043;P43;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P044;P44;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P045;P45;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P046;P46;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P047;P47;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P048;P48;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P049;P49;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P050;P50;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P051;P51;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P052;P52;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P053;P53;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P054;P54;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P055;P55;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P056;P56;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P057;P57;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P058;P58;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P059;P59;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P060;P60;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P061;P61;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P062;P62;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P063;P63;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P064;P64;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P065;P65;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P066;P66;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P067;P67;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P068;P68;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P069;P69;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P070;P70;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P071;P71;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P072;P72;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P073;P73;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P074;P74;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P075;P75;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P076;P76;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P077;P77;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P078;P78;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P079;P79;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P080;P80;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P081;P81;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P082;P82;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P083;P83;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P084;P84;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P085;P85;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P086;P86;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P087;P87;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P088;P88;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P089;P89;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P090;P90;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P091;P91;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P092;P92;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P093;P93;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P094;P94;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P095;P95;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P096;P96;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P097;P97;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P098;P98;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P099;P99;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P100;P100;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P101;P101;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P102;P102;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P103;P103;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P104;P104;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P105;P105;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P106;P106;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P107;P107;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P108;P108;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P109;P109;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P110;P110;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P111;P111;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P112;P112;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P113;P113;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P114;P114;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P115;P115;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P116;P116;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P117;P117;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P118;P118;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P119;P119;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P120;P120;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P121;P121;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P122;P122;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P123;P123;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P124;P124;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P125;P125;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P126;P126;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P127;P127;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P128;P128;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P129;P129;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P130;P130;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P131;P131;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P132;P132;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P133;P133;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P134;P134;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P135;P135;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P136;P136;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P137;P137;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible
+P138;P138;PARKING;Cochera Plus;12,50;2.5m x 5.0m;5000;50;0;Disponible

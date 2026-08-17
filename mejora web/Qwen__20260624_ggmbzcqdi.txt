@@ -1,0 +1,159 @@
+========================================
+MOON PARACAS - CONDOMINIO ECOLÓGICO DE LUJO SILENCIOSO
+PROYECTO COMPLETO - ACTUALIZACIÓN INTEGRAL
+========================================
+
+CONTEXTO DEL PROYECTO:
+Moon Paracas es un condominio residencial exclusivo de muy baja densidad en Paracas, Perú.
+- Área Total: 112,391.80 m² (11.2 hectáreas)
+- Total Lotes: 312 lotes residenciales (NO 238)
+- Total Cocheras: 138 unidades (P001-P138)
+- Tipologías: 5 tipos (Premium/Oasis, Zen, Estándar, Tiny House, Ajuste)
+- Ubicación: Tablazo elevado a 110 msnm (sin riesgo de tsunami)
+- Coordenadas UTM: 374550-375075 Este, Zona 18S
+- Perímetro: 1,357.21 metros lineales
+
+ESTRUCTURA DE ARCHIVOS REQUERIDA:
+/web/
+  ├── index.html (página principal)
+  ├── pages/
+  │   ├── propiedades.html (catálogo completo)
+  │   ├── nosotros.html (concepto)
+  │   └── contacto.html (formulario)
+  ├── css/
+  │   ├── styles.css (estilos principales)
+  │   └── responsive.css (móvil)
+  └── js/
+      ├── main.js (controlador principal)
+      └── properties.js (dataset corregido)
+
+/datos/
+  └── INVENTARIO_MOON_PARACAS.csv (312 lotes + 138 cocheras)
+
+CORRECCIONES CRÍTICAS A APLICAR:
+
+1. INVENTARIO REAL:
+   - Cambiar TODAS las referencias de "238 lotes" a "312 lotes"
+   - Agregar las 138 cocheras (P001-P138) como categoría separada
+   - Implementar 5 tipologías (no 3):
+     * Lote Premium (Oasis): M13-M18, 52 lotes, S/170/m²
+     * Lote Zen: M20, 10 lotes, S/120/m²  
+     * Lote Estándar: M1-M6, M19-M21, M25-M27, ~120 lotes, S/120/m²
+     * Lote Tiny House: M7-M12, M22-M24, ~130 lotes, S/120/m²
+     * Lote Ajuste (Irregular): M28-M30, 26 lotes, S/120/m²
+
+2. ESTADOS COMERCIALES:
+   - Disponible: Verde (#4caf50)
+   - En Oferta: Magenta (#e91e63) + Badge "50% OFF"
+   - Separado: Naranja (#ff9800) + Badge "RESERVADO"
+   - Vendido: Rojo (#f44336) + Opacidad 25%
+
+3. BUGS DE CÓDIGO A CORREGIR:
+   - main.js: Arrow function rota "prop = >" → "prop =>"
+   - main.js: Strings con espacios "div " → "div"
+   - properties.js: Keys con espacios "id " → "id"
+   - styles.css: Comentarios mal cerrados "/ *" → "/*"
+   - styles.css: Selector huérfano "{" → "* {"
+
+4. FUNCIONALIDADES REQUERIDAS:
+   a) Mapa interactivo SVG con:
+      - Perímetro real del CAD (polígono irregular, NO rombo)
+      - 30 manzanas (M1-M30) distribuidas radialmente
+      - Club Oasis en el centro
+      - Colores por tipología
+      - Hover: Tooltip con ID, área, precio, distancia al Oasis
+      - Click: Navegar a detalle del lote
+   
+   b) Filtros avanzados:
+      - Por tipología (checkboxes)
+      - Por estado (checkboxes)
+      - Por rango de precio (slider S/0-S/45,000)
+      - Por manzana (dropdown M1-M30)
+      - Buscador por ID (L001, P001, etc.)
+   
+   c) Simulador de financiamiento:
+      - Cuota inicial: 30% (ajustable 10%-100%)
+      - Plazo: 12 meses (opciones 6m/12m/18m)
+      - Sin intereses
+      - Mostrar: Inicial, saldo, cuota mensual
+   
+   d) Badges visuales:
+      - "50% OFF" en lotes "En Oferta"
+      - "RESERVADO" en lotes "Separado"
+      - Precio tachado + precio oferta
+
+5. DATOS TÉCNICOS DEL CAD:
+   - Coordenadas: 374550.000 a 375075.000 Este
+   - Perímetro: 1,357.21 ml
+   - Forma: Polígono irregular (ver archivo CAD PDF)
+   - Orientación: Norte-Sur con rotación 15° NE
+   - Club Oasis: Centro del masterplan
+
+6. PRESUPUESTO DE OBRAS (de Excel):
+   - CAPEX Total: S/3,204,280.52
+   - Ingreso monumental: S/120,000
+   - Cercos perimetrales: S/327,000
+   - Vías internas: S/490,946
+   - Club Oasis: S/474,000
+   - Instalaciones sanitarias: S/487,250
+   - Energía solar: S/452,500
+
+7. FLUJO DE CAJA (ventas_mensuales.csv):
+   - Horizonte: 48 meses
+   - Mes 1-12: 5-6 lotes/mes + 3 cocheras
+   - Mes 13-24: 5 lotes/mes + 3 cocheras
+   - Mes 25-48: 5 lotes/mes + 2 cocheras
+   - Recaudación proyectada: S/7.8M total
+
+8. REGLAMENTO DE CONSTRUCCIÓN:
+   - Altura máxima: 2 pisos + azotea (7.50m)
+   - Retiros: Frontal 3m, Lateral 1.5m, Posterior 2m
+   - Área libre mínima: 30%
+   - Coeficiente de edificación: 0.40-0.60
+   - Materiales: Adobe, caliche, madera (NO colores brillantes)
+   - Energía solar: Obligatoria (mínimo 4 paneles)
+   - Xeripaisajismo: Obligatorio (cero césped)
+
+9. NORMAS TÉCNICAS:
+   - Zona sísmica: 4 (alta sismicidad)
+   - Cimentación: Losas de cimentación (plateas) obligatorias
+   - Cemento: Tipo V (resistente a sulfatos)
+   - Concreto: f'c = 210 kg/cm² mínimo
+   - Agua: Tuberías HDPE
+   - Desagüe: PTAR biológica central
+
+10. DOCUMENTOS LEGALES:
+    - modelo_contrato.txt: Contrato principal
+    - reglamento_interno_base.txt: Normas de comunidad
+    - anexo_etapa_fundadora.txt: Condiciones fase 0
+    - terminos_condiciones.txt: Disclosure de riesgos
+    - constancia_adjudicacion_posesion.txt: Constancia interna
+
+ARCHIVOS A GENERAR/ACTUALIZAR:
+
+1. web/index.html → Actualizar stats: 312 lotes, 138 cocheras
+2. web/pages/propiedades.html → Agregar filtros + mapa SVG
+3. web/js/main.js → Corregir bugs + cargar CSV completo
+4. web/js/properties.js → Dataset corregido (sin espacios)
+5. web/css/styles.css → Corregir comentarios + agregar badges
+6. web/css/responsive.css → Mantener + mejorar mobile
+
+PRIORIDADES:
+1. ✅ Corregir inventario (312 lotes + 138 cocheras)
+2. ✅ Corregir bugs de código (arrow functions, strings, comentarios)
+3. ✅ Implementar filtros comerciales (tipología, estado, precio)
+4. ✅ Agregar badges "50% OFF" y "RESERVADO"
+5. ✅ Mapa SVG interactivo con geometría real del CAD
+6. ✅ Simulador de financiamiento funcional
+7. ✅ Tooltip con información completa por lote
+
+NOTAS FINALES:
+- NO usar datos hardcodeados de 238 lotes
+- SIEMPRE cargar desde CSV/JSON el inventario completo
+- Mantener coherencia con brandbook (colores: #c5a880, #a67a5b, #151515)
+- Responsive design obligatorio (mobile-first)
+- Accesibilidad WCAG 2.1 AA
+
+========================================
+FIN DEL PROMPT
+========================================

@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "stableId": "v1-M1-L01",
+        "blockId": "M1",
+        "lotId": "L01",
+        "label": "Lote 1",
+        "typology": "premium",
+        "status": "available",
+        "version": "1.0"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0, 0],
+            [10, 0],
+            [10, -25],
+            [0, -25],
+            [0, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stableId": "v1-M1-L02",
+        "blockId": "M1",
+        "lotId": "L02",
+        "label": "Lote 2",
+        "typology": "standard",
+        "status": "offer",
+        "version": "1.0"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [10, 0],
+            [20, 0],
+            [20, -25],
+            [10, -25],
+            [10, 0]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+# Dependencies & Virtual Environments
+node_modules/
+**/node_modules/
+.venv/
+**/.venv/
+env/
+venv/
+
+# Build outputs, Bundles & Artifacts
+dist/
+**/dist/
+build/
+**/build/
+.vercel/
+**/.vercel/
+artifacts/
+**/artifacts/
+
+# Heavy Video, HDR, and High-Res Media Archives
+*.mp4
+**/*.mp4
+*.hdr
+**/*.hdr
+Gemini_Generated_Image_*.png
+web mon/public/media/
+**/public/media/
+
+# Heavy Media Directories (supplementary archives)
+material web/
+videos web/
+imagenes para video/
+outputs/
+output/
+migracion/
+work/
+
+# Heavy PDF Magazines
+*SUMPLEMENTO REVISTA COSTOS*.pdf
+
+# Temporary / Scratch
+tmp/
+scratch/
+.system_generated/
+*.log
+*.tmp
+
+# IDE / Agent Configs
+.cursor/
+.agents/
+.codex-sheet-audit/
+.DS_Store
+Thumbs.db
+.env.local
+.env.*.local
