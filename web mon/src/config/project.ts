@@ -3,9 +3,15 @@ const onlyDigits = (value: string) => value.replace(/\D/g, "");
 export const PROJECT = {
   name: "Moon Paracas",
   siteUrl: (import.meta.env.VITE_SITE_URL || "https://moon-paracas.vercel.app").replace(/\/$/, ""),
-  residentialLots: 282,
-  areaLabel: "11,24 ha",
+  residentialLots: 384,
+  parkingLots: 192,
+  totalUnits: 576,
+  areaLabel: "11.26 ha",
+  totalAreaM2: 112554.30,
+  oasisAreaM2: 20662.15,
   location: "Paracas, Ica, Perú",
+  panamericanaKm: 240,
+  centerCoordinates: { lat: -13.923861, lng: -76.159180 },
   reservationAmount: 1000,
 };
 

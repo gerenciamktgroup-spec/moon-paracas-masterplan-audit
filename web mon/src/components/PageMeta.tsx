@@ -5,7 +5,7 @@ import { PROJECT } from "../config/project";
 const META: Record<string, { title: string; description: string }> = {
   "/": {
     title: "Moon Paracas | Refugio orgánico en Paracas",
-    description: "Explora el masterplan, tipologías, financiamiento y expediente de decisión de Moon Paracas.",
+    description: "Lotes de 120 m² en Paracas, Ica, desde S/ 63,000. Pampa inland, US$ 140/m², lista agosto 2026.",
   },
   "/simulador": {
     title: "Masterplan y lotes | Moon Paracas",
@@ -16,8 +16,8 @@ const META: Record<string, { title: string; description: string }> = {
     description: "Conoce las configuraciones Founder y Comfort, sus alcances y alternativas de financiamiento.",
   },
   "/galeria": {
-    title: "Galería del proyecto | Moon Paracas",
-    description: "Distingue renders conceptuales, referencias de diseño y registros del entorno de Moon Paracas.",
+    title: "Lookbook de materia | Moon Paracas",
+    description: "Cinco capítulos táctiles: tierra, barro, lino, bronce y polvo. Visualizaciones referenciales del refugio inland.",
   },
   "/experiencia": {
     title: "Experiencia y antecedentes | Moon Paracas",
@@ -28,8 +28,12 @@ const META: Record<string, { title: string; description: string }> = {
     description: "Consulta parámetros técnicos, alcances contractuales y la lista de verificación previa a una reserva.",
   },
   "/documentos": {
-    title: "Centro documental | Moon Paracas",
-    description: "Revisa qué evidencia está publicada, qué debe solicitarse vigente y qué permanece pendiente antes de separar.",
+    title: "Bóveda · Expediente Moon Paracas",
+    description: "Expediente web de Moon Paracas: qué está en guía, qué se solicita vigente y qué aún no se ha depositado.",
+  },
+  "/cielo": {
+    title: "Ritual Cielo | Moon Paracas",
+    description: "De la pampa inland a la noche ganada: astronomía, fuego bajo y silencio.",
   },
   "/privacidad": {
     title: "Aviso de privacidad | Moon Paracas",

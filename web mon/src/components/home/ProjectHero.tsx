@@ -1,130 +1,187 @@
-import React, { useEffect, useState } from "react";
-import { ArrowDown, ArrowUpRight, Calculator, Map, Sparkles } from "lucide-react";
-import { motion, useReducedMotion } from "framer-motion";
+import React from "react";
+import { ArrowUpRight, Sparkles, MessageCircle, ShieldCheck, MapPin, CheckCircle2, Layers, Download, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
-import { PROJECT } from "../../config/project";
-import { COMMERCIAL_PRICE_PERIOD_LABEL } from "../../config/pricing";
+import { whatsappHref } from "../../config/project";
+import { STANDARD_LOT_PRICE_USD, STANDARD_LOT_PRICE_PEN, DOUBLE_LOT_PRICE_USD, DOUBLE_LOT_PRICE_PEN, MACRO_LOT_PRICE_USD, LOT_PRICE_PER_M2_USD, MACRO_LOT_PRICE_PER_M2_USD } from "../../config/pricing";
 
-const stats = [
-  [PROJECT.areaLabel, "de paisaje"],
-  [String(PROJECT.residentialLots), "lotes residenciales"],
-  ["6", "aldeas peatonales"],
-];
+interface ProjectHeroProps {
+  onOpenDossier?: () => void;
+  onOpenShowroom?: () => void;
+}
 
-export function ProjectHero() {
-  const reduceMotion = useReducedMotion();
-  const [showVideo, setShowVideo] = useState(false);
-  const [videoReady, setVideoReady] = useState(false);
-
-  useEffect(() => {
-    if (reduceMotion || !window.matchMedia("(min-width: 1024px)").matches) return;
-    const timer = window.setTimeout(() => setShowVideo(true), 1400);
-    return () => window.clearTimeout(timer);
-  }, [reduceMotion]);
+export const ProjectHero: React.FC<ProjectHeroProps> = ({ onOpenDossier, onOpenShowroom }) => {
+  const waHeroMsg = "Hola! Quiero información sobre los lotes de 120 m² a $120/m² en Moon Paracas (Precio de Lanzamiento desde $14,400 USD).";
 
   return (
-    <section data-testid="project-hero" className="relative flex min-h-[calc(100svh-72px)] items-end overflow-hidden bg-[#172126] text-white md:min-h-[820px]">
-      <picture className="absolute inset-0">
-        <source media="(max-width: 767px)" srcSet="/media/hero-poster-mobile.webp" />
-        <img
-          src="/media/hero-poster-desktop.webp"
-          alt="Arquitectura orgánica integrada al paisaje desértico de Moon Paracas"
-          className="h-full w-full object-cover"
-          fetchPriority="high"
-          decoding="async"
-        />
-      </picture>
-      {showVideo && (
-        <video
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-100" : "opacity-0"}`}
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="none"
-          poster="/media/hero-poster-desktop.webp"
-          onCanPlay={() => setVideoReady(true)}
-          aria-hidden="true"
-        >
-          <source src="/media/hero_bg.mp4" type="video/mp4" />
-        </video>
-      )}
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,18,19,0.94)_0%,rgba(10,18,19,0.64)_48%,rgba(10,18,19,0.12)_78%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(9,14,14,0.96)_0%,rgba(9,14,14,0.08)_58%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_30%,rgba(240,176,140,0.12),transparent_34%)]" />
+    <section className="relative min-h-[95vh] flex flex-col justify-between overflow-hidden bg-[#FAF7F2] pt-28 sm:pt-36 pb-16">
+      
+      {/* Luces de Atardecer y Atmósfera Cálida */}
+      <div className="absolute inset-0 ambient-desert-glow pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] ambient-sunset-flare pointer-events-none" />
+      <div className="pointer-events-none absolute -left-20 bottom-10 h-[450px] w-[450px] rounded-full bg-[#C5A059]/10 blur-3xl" />
 
-      <motion.div
-        initial={reduceMotion ? false : { opacity: 0, y: 26 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-        className="relative z-10 mx-auto w-full max-w-[1400px] px-5 pb-28 pt-28 sm:px-8 md:pb-14 lg:px-12"
-      >
+      <div className="relative mx-auto max-w-[1360px] px-5 sm:px-8 lg:px-12 w-full flex-1 flex flex-col justify-center">
+        
+        {/* Top Eyebrow Badges */}
+        <div className="flex flex-wrap items-center gap-3 mb-8">
+          <div className="inline-flex items-center gap-2 rounded-full border border-[#C5A059]/40 bg-white/90 px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.24em] text-[#A84F36] shadow-sm backdrop-blur-md">
+            <Sparkles className="h-3.5 w-3.5 text-[#C5A059]" />
+            Precios de Lanzamiento · ${LOT_PRICE_PER_M2_USD} USD / m²
+          </div>
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-[#4E6646]/10 px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-wider text-[#4E6646]">
+            <ShieldCheck className="h-3.5 w-3.5 text-[#4E6646]" />
+            Asociación & Adjudicación Notarial
+          </div>
+          <div className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-[#161311]/5 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-[#38312B]">
+            <MapPin className="h-3.5 w-3.5 text-[#C85B3E]" />
+            A 3 horas de Lima · Sol 365 días
+          </div>
+        </div>
+
+        {/* Titular Editorial de Gran Escala */}
         <div className="max-w-4xl">
-          <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/16 bg-black/20 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#f0b08c] backdrop-blur-md">
-            <Sparkles className="h-4 w-4" aria-hidden="true" />
-            Fase Founder · Cupos limitados
-          </p>
-          <h1 className="font-display text-[clamp(4.6rem,11vw,10rem)] font-semibold leading-[0.78] tracking-[-0.045em] text-[#fffaf0]">
-            Moon Paracas
+          <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl xl:text-[5.4rem] font-bold leading-[1.03] text-[#161311] tracking-tight">
+            El lujo del <span className="font-serif-italic font-normal text-[#C85B3E]">silencio</span>.<br />
+            Tu santuario en Paracas.
           </h1>
-          <p className="mt-8 max-w-2xl font-display text-2xl font-medium leading-[1.02] text-[#f5d8c5] sm:text-3xl md:text-4xl">
-            Tu refugio orgánico entre el desierto y el mar.
+          <p className="mt-6 max-w-2xl text-base sm:text-lg lg:text-xl font-normal leading-relaxed text-[#38312B]/85">
+            Lotes desde <strong>120 m² para casa domo</strong> a solo <strong>${LOT_PRICE_PER_M2_USD} USD/m²</strong> (desde ${STANDARD_LOT_PRICE_USD.toLocaleString()} USD), con opción de unir 2 lotes (240 m²) y acceso al primer <strong>Oasis de 5,000 m²</strong> en la pampa de Ica.
           </p>
-          <p className="mt-5 max-w-xl text-sm leading-7 text-[#ece8df] md:text-base">
-            Un proyecto de baja densidad para quienes buscan espacio, arquitectura y una decisión patrimonial explicada con claridad.
-          </p>
-
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a
-              href="#masterplan"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#ba5638] px-7 text-[10px] font-bold uppercase tracking-[0.14em] text-white shadow-[0_14px_35px_rgba(186,86,56,0.24)] transition-all hover:-translate-y-0.5 hover:bg-[#9e452d] focus:outline-none focus:ring-2 focus:ring-[#f4d2bd] focus:ring-offset-2 focus:ring-offset-[#172126]"
-            >
-              <Map className="h-4 w-4" aria-hidden="true" />
-              Explorar el masterplan
-            </a>
-            <a
-              href="#financiamiento"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/35 bg-black/20 px-7 text-[10px] font-bold uppercase tracking-[0.14em] text-white backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:bg-white hover:text-[#18353b] focus:outline-none focus:ring-2 focus:ring-white"
-            >
-              <Calculator className="h-4 w-4" aria-hidden="true" />
-              Calcular financiamiento
-            </a>
-          </div>
         </div>
 
-        <div className="mt-12 flex flex-col justify-between gap-7 border-t border-white/20 pt-6 md:flex-row md:items-end">
-          <dl className="grid grid-cols-3 gap-5 sm:max-w-xl sm:gap-10">
-            {stats.map(([value, label]) => (
-              <div key={label}>
-                <dt className="font-display text-2xl font-semibold text-white sm:text-3xl">{value}</dt>
-                <dd className="mt-1 text-[9px] font-semibold uppercase tracking-[0.16em] text-white/65 sm:text-[10px]">
-                  {label}
-                </dd>
-              </div>
-            ))}
-          </dl>
-          <div className="flex flex-wrap items-end gap-5 md:justify-end">
+        {/* Bento Grid de Ofertas de Lanzamiento */}
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-12 gap-5 items-stretch max-w-5xl">
+          
+          {/* Card 1: Lote 120 m² (Casa Domo) */}
+          <div className="md:col-span-4 rounded-[2rem] border border-[#C5A059]/35 bg-white p-7 shadow-[0_20px_50px_rgba(22,19,17,0.06)] flex flex-col justify-between hover:border-[#C5A059] transition-all duration-300">
             <div>
-              <p className="text-[8px] font-bold uppercase tracking-[0.16em] text-white/45">Lista comercial · {COMMERCIAL_PRICE_PERIOD_LABEL}</p>
-              <p className="mt-1 font-display text-2xl font-semibold text-[#ffd5bd]">Lotes desde S/ 37,500</p>
+              <div className="flex justify-between items-center">
+                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C5A059]">Lote Casa Domo</span>
+                <span className="rounded-full bg-[#4E6646]/10 px-2.5 py-0.5 text-[9px] font-bold text-[#4E6646]">${LOT_PRICE_PER_M2_USD}/m²</span>
+              </div>
+              <h3 className="mt-2.5 font-display text-2xl font-bold text-[#161311]">120 m² Residencial</h3>
+              <p className="mt-1 text-xs text-[#786F66]">Diseñado para Domo Ø8m o cabaña ecológica dentro del condominio.</p>
             </div>
-            <Link
-              to="/simulador"
-              className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.14em] text-white underline decoration-white/35 underline-offset-8 hover:decoration-white"
+            
+            <div className="mt-8 pt-5 border-t border-[#E8E1D5] flex items-baseline justify-between">
+              <div>
+                <span className="text-[9px] uppercase tracking-wider text-[#786F66] font-bold">Lanzamiento</span>
+                <p className="text-3xl font-bold font-display text-[#161311]">${STANDARD_LOT_PRICE_USD.toLocaleString()} <span className="text-xs font-sans text-[#786F66]">USD</span></p>
+                <span className="text-[11px] text-[#A84F36] font-semibold">~S/ {STANDARD_LOT_PRICE_PEN.toLocaleString()} PEN</span>
+              </div>
+              <span className="text-xs font-semibold text-[#4E6646]">36 cuotas</span>
+            </div>
+          </div>
+
+          {/* Card 2: Lote Doble 240 m² (2 Lotes Juntos) */}
+          <div className="md:col-span-4 rounded-[2rem] border border-[#C85B3E]/25 bg-gradient-to-b from-[#FAF7F2] to-[#F4EFE6] p-7 shadow-[0_20px_50px_rgba(22,19,17,0.04)] flex flex-col justify-between hover:border-[#C85B3E]/50 transition-all duration-300">
+            <div>
+              <div className="flex justify-between items-center">
+                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#A84F36]">Lote Doble (2 juntos)</span>
+                <span className="rounded-full bg-[#C85B3E]/10 px-2.5 py-0.5 text-[9px] font-bold text-[#C85B3E]">Mayor Espacio</span>
+              </div>
+              <h3 className="mt-2.5 font-display text-2xl font-bold text-[#161311]">240 m² Ampliado</h3>
+              <p className="mt-1 text-xs text-[#786F66]">Ideal para domo principal + plunge pool privada y jardín amplio.</p>
+            </div>
+            
+            <div className="mt-8 pt-5 border-t border-[#E8E1D5] flex items-baseline justify-between">
+              <div>
+                <span className="text-[9px] uppercase tracking-wider text-[#786F66] font-bold">Lanzamiento</span>
+                <p className="text-3xl font-bold font-display text-[#C85B3E]">${DOUBLE_LOT_PRICE_USD.toLocaleString()} <span className="text-xs font-sans text-[#786F66]">USD</span></p>
+                <span className="text-[11px] text-[#38312B] font-semibold">~S/ {DOUBLE_LOT_PRICE_PEN.toLocaleString()} PEN</span>
+              </div>
+              <span className="text-xs font-semibold text-[#161311]">2 unidades</span>
+            </div>
+          </div>
+
+          {/* Card 3: Terrenos > 2,000 m² (Sector Campestre Externo) */}
+          <div className="md:col-span-4 rounded-[2rem] border border-[#E8E1D5] bg-white p-7 shadow-[0_20px_50px_rgba(22,19,17,0.04)] flex flex-col justify-between hover:border-[#161311] transition-all duration-300">
+            <div>
+              <div className="flex justify-between items-center">
+                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#786F66]">Sector Campestre Externo</span>
+                <span className="rounded-full bg-[#161311]/10 px-2.5 py-0.5 text-[9px] font-bold text-[#161311]">${MACRO_LOT_PRICE_PER_M2_USD}/m²</span>
+              </div>
+              <h3 className="mt-2.5 font-display text-2xl font-bold text-[#161311]">&gt; 2,000 m² Rústico</h3>
+              <p className="mt-1 text-xs text-[#786F66]">Grandes extensiones fuera del condominio para huertos o proyectos campestres.</p>
+            </div>
+            
+            <div className="mt-8 pt-5 border-t border-[#E8E1D5] flex items-baseline justify-between">
+              <div>
+                <span className="text-[9px] uppercase tracking-wider text-[#786F66] font-bold">Desde</span>
+                <p className="text-3xl font-bold font-display text-[#161311]">${MACRO_LOT_PRICE_USD.toLocaleString()} <span className="text-xs font-sans text-[#786F66]">USD</span></p>
+                <span className="text-[11px] text-[#786F66]">2,000 m² a $45/m²</span>
+              </div>
+              <span className="text-xs font-semibold text-[#786F66]">Extramuros</span>
+            </div>
+          </div>
+
+        </div>
+
+        {/* Acciones de Contacto Inmediato */}
+        <div className="mt-8 flex flex-wrap gap-3.5 items-center">
+          <Link
+            to="/simulador"
+            className="flex items-center justify-center gap-2 rounded-2xl bg-[#C85B3E] px-8 py-4 font-sans text-xs font-bold text-white shadow-lg shadow-[#C85B3E]/25 transition-all duration-300 hover:bg-[#A84F36] hover:shadow-xl active:scale-95"
+          >
+            <span>Ver Disponibilidad en Masterplan</span>
+            <ArrowUpRight className="h-4 w-4" />
+          </Link>
+
+          {onOpenDossier && (
+            <button
+              onClick={onOpenDossier}
+              className="flex items-center justify-center gap-2 rounded-2xl border border-[#C5A059]/60 bg-white px-7 py-4 font-sans text-xs font-bold text-[#161311] shadow-sm transition-all duration-300 hover:bg-[#FAF7F2] active:scale-95 cursor-pointer"
             >
-              Ver disponibilidad <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
+              <Download className="h-4 w-4 text-[#A84F36]" />
+              <span>Descargar Dossier 2026</span>
+            </button>
+          )}
+
+          {onOpenShowroom && (
+            <button
+              onClick={onOpenShowroom}
+              className="hidden lg:flex items-center justify-center gap-2 rounded-2xl border border-[#E8E1D5] bg-white/80 px-6 py-4 font-sans text-xs font-bold text-[#38312B] shadow-sm transition-all duration-300 hover:bg-white active:scale-95 cursor-pointer"
+            >
+              <Calendar className="h-4 w-4 text-[#4E6646]" />
+              <span>Agendar Visita Showroom</span>
+            </button>
+          )}
+
+          <a
+            href={whatsappHref(waHeroMsg)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 rounded-2xl border border-[#E8E1D5] bg-white px-6 py-4 font-sans text-xs font-bold text-[#161311] shadow-sm transition-all duration-300 hover:bg-[#FAF7F2] active:scale-95"
+          >
+            <MessageCircle className="h-4 w-4 text-[#25D366] fill-current" />
+            <span>Cotizar por WhatsApp (Separa con S/ 1,000)</span>
+          </a>
+        </div>
+
+      </div>
+
+      {/* Franja de Métricas Reales */}
+      <div className="relative mx-auto max-w-[1360px] px-5 sm:px-8 lg:px-12 mt-16 w-full">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-[#E8E1D5] pt-8 text-left">
+          <div>
+            <span className="block font-display text-3xl font-bold text-[#161311]">$120 USD</span>
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#786F66]">Precio Lanzamiento x m²</span>
+          </div>
+          <div>
+            <span className="block font-display text-3xl font-bold text-[#C85B3E]">120 / 240 m²</span>
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#786F66]">Lote Simple o Doble</span>
+          </div>
+          <div>
+            <span className="block font-display text-3xl font-bold text-[#C5A059]">5,000 m²</span>
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#786F66]">Oasis & Laguna Zen</span>
+          </div>
+          <div>
+            <span className="block font-display text-3xl font-bold text-[#4E6646]">Reglamento</span>
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#786F66]">Ecológico & Plusvalía</span>
           </div>
         </div>
-      </motion.div>
-
-      <a
-        href="#vision"
-        className="absolute bottom-5 left-1/2 z-20 hidden -translate-x-1/2 text-white/65 transition-colors hover:text-white lg:block"
-        aria-label="Ir a la visión del proyecto"
-      >
-        <ArrowDown className="h-5 w-5 animate-bounce" />
-      </a>
+      </div>
     </section>
   );
-}
+};
+

@@ -14,6 +14,8 @@ import { captureAttribution } from "./lib/attribution";
 import { trackEvent } from "./lib/analytics";
 
 import { Home } from "./pages/Home";
+import { DossierModal } from "./components/home/DossierModal";
+import { ShowroomVisitModal } from "./components/home/ShowroomVisitModal";
 
 const Simulator = lazy(() => import("./pages/Simulator").then((module) => ({ default: module.Simulator })));
 const Technical = lazy(() => import("./pages/Technical").then((module) => ({ default: module.Technical })));
@@ -23,6 +25,7 @@ const ParacasDome = lazy(() => import("./pages/ParacasDome").then((module) => ({
 const NotFound = lazy(() => import("./pages/NotFound").then((module) => ({ default: module.NotFound })));
 const LegalPage = lazy(() => import("./pages/Legal").then((module) => ({ default: module.LegalPage })));
 const DocumentCenter = lazy(() => import("./pages/DocumentCenter").then((module) => ({ default: module.DocumentCenter })));
+const Cielo = lazy(() => import("./pages/Cielo").then((module) => ({ default: module.Cielo })));
 
 // Scroll to top helper
 const ScrollToTop = () => {
@@ -44,6 +47,10 @@ export default function App() {
   
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [paymentRequest, setPaymentRequest] = useState<{ lotId: string; client: ReservationClientData } | null>(null);
+  
+  // Global modal state for Dossier and Showroom Visit
+  const [dossierOpen, setDossierOpen] = useState(false);
+  const [showroomOpen, setShowroomOpen] = useState(false);
 
   useEffect(() => captureAttribution(), []);
 
@@ -152,12 +159,15 @@ export default function App() {
     <BrowserRouter>
       <PageMeta />
       <ScrollToTop />
-      <div className="min-h-[100dvh] font-sans selection:bg-[#D95D39] selection:text-white flex flex-col relative overflow-hidden bg-[#0A0807]">
+      <div className="min-h-[100dvh] font-sans selection:bg-[#C85B3E] selection:text-white flex flex-col relative overflow-hidden bg-[#FAF8F5]">
         
-        <div className="fixed inset-0 z-0 bg-[#111613]" aria-hidden="true" />
+        <div className="fixed inset-0 z-0 bg-[#FAF8F5]" aria-hidden="true" />
 
         <div className="relative z-10 flex flex-col min-h-screen">
-          <Header />
+          <Header 
+            onOpenDossier={() => setDossierOpen(true)}
+            onOpenShowroom={() => setShowroomOpen(true)}
+          />
 
           {paymentRequest && (
             <PaymentDialog
@@ -170,17 +180,28 @@ export default function App() {
 
           {/* Toast Notification */}
           {toastMessage && (
-            <div className="fixed bottom-5 right-5 z-50 rounded-xl bg-stone-900 px-5 py-4 text-sm text-white border border-[#F5F2EB]/15 flex items-center gap-3 shadow-2xl animate-fade-in">
-              <ShieldCheck className="h-5 w-5 text-[#D95D39]" />
+            <div className="fixed bottom-5 right-5 z-50 rounded-xl bg-white px-5 py-4 text-sm text-[#1C1612] border border-[#E8E1D5] flex items-center gap-3 shadow-[0_16px_40px_rgba(28,22,18,0.12)] animate-fade-in">
+              <ShieldCheck className="h-5 w-5 text-[#C85B3E]" />
               <span className="font-bold tracking-wide">{toastMessage}</span>
             </div>
           )}
 
+          {/* Modales Globales de Dossier y Showroom */}
+          <DossierModal 
+            isOpen={dossierOpen} 
+            onClose={() => setDossierOpen(false)} 
+          />
+          <ShowroomVisitModal 
+            isOpen={showroomOpen} 
+            onClose={() => setShowroomOpen(false)} 
+          />
+
           <main className="flex-1 relative z-10">
             <Suspense
               fallback={
-                <div className="flex min-h-[55vh] items-center justify-center bg-[#111613] text-xs font-bold uppercase text-white/60">
-                  Cargando experiencia...
+                <div className="flex min-h-[55vh] flex-col items-center justify-center bg-[#FAF8F5] px-6 text-center">
+                  <p className="moon-title text-[#1C1612]">La pampa tarda un segundo en aparecer.</p>
+                  <p className="mt-3 font-display italic text-lg text-[#A84F36]">Abriendo Moon Paracas</p>
                 </div>
               }
             >
@@ -209,6 +230,7 @@ export default function App() {
               <Route path="/experiencia" element={<Experience />} />
               <Route path="/tecnica" element={<Technical />} />
               <Route path="/documentos" element={<DocumentCenter />} />
+              <Route path="/cielo" element={<Cielo />} />
               <Route path="/privacidad" element={<LegalPage type="privacy" />} />
               <Route path="/terminos" element={<LegalPage type="terms" />} />
               <Route path="*" element={<NotFound />} />
@@ -217,10 +239,15 @@ export default function App() {
           </main>
 
           {/* Global Footer (Contáctanos) */}
-          <Footer selectedLot={selectedLot} />
+          <Footer 
+            selectedLot={selectedLot} 
+            onOpenDossier={() => setDossierOpen(true)}
+            onOpenShowroom={() => setShowroomOpen(true)}
+          />
           <PrivacyMetrics />
         </div>
       </div>
     </BrowserRouter>
   );
 }
+

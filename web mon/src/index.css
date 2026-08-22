@@ -1,211 +1,86 @@
-html {
-  scroll-behavior: smooth;
-  text-rendering: optimizeLegibility;
-}
-
 @import "tailwindcss";
 
-@theme {
-  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Cormorant Garamond", Georgia, serif;
+@layer base {
+  :root {
+    /* Paleta Warm Desert Luxury (Moon Paracas) */
+    --bg-canvas: #FAF7F2;        /* Hueso / Lino suave */
+    --bg-card: #FFFFFF;          /* Blanco puro para tarjetas elevadas */
+    --bg-sand: #F4EFE6;          /* Arena del desierto suave */
+    --bg-sand-muted: #E8E1D5;    /* Arena compacta */
+    
+    --text-obsidian: #161311;    /* Negro espresso cálido profundo */
+    --text-earth: #38312B;       /* Texto secundario de lectura */
+    --text-stone: #786F66;       /* Microcopys y metadatos */
 
-  --color-navy-ink: #101a1b;
-  --color-pastel-cream: #f5f1e8;
-  --color-faded-rose: #bb5638;
-  --color-desert-bronze: #d2aa78;
-  --color-ocean-deep: #153a43;
-  --color-sage: #6f8465;
-  --color-sand-warm: #d4b896;
-
-  /* Status Colors Mapped to Brandbook */
-  --color-status-available: #F5F2EB;
-  --color-status-offer: #D95D39;
-  --color-status-sold: #241C1A;
-  --color-status-blocked: #3D2F2A;
-  --color-status-reserved: #3D2F2A;
-}
-
-@layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
+    --accent-terracotta: #C85B3E;/* Botones primarios y llamadas de acción */
+    --accent-clay: #A84F36;      /* Hover de terracota */
+    --accent-gold: #C5A059;      /* Badges Founder, estrellas y detalles */
+    --accent-olive: #4E6646;     /* Lotes disponibles y vegetación */
+    --accent-oasis: #1B4B47;     /* Laguna de piedra desértica */
   }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-}
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-  background-color: #101a1b;
-}
-
-body {
-  margin: 0;
-  background-color: var(--color-navy-ink);
-  color: var(--color-pastel-cream);
-  font-family: var(--font-sans);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='sand-noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.88 0 0 0 0 0.85 0 0 0 0 0.76 0 0 0 0.025 0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23sand-noise)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  font-synthesis: none;
-}
-
-img,
-video {
-  display: block;
-}
-
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-
-button:not(:disabled),
-[role="button"]:not([aria-disabled="true"]) {
-  cursor: pointer;
-}
-
-/* Elegance resets for headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display);
-  text-wrap: balance;
-}
-
-p {
-  text-wrap: pretty;
-}
-
-/* Map specific global overrides for elegance */
-svg text {
-  font-family: var(--font-sans);
-}
-
-/* Glassmorphism & Modern 2026 Layout Utilities */
-.glass-card {
-  background-color: rgba(22, 17, 15, 0.55);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(245, 242, 235, 0.08);
-  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 0.5rem;
-}
-
-.glass-card-hover {
-  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.glass-card-hover:hover {
-  background-color: rgba(31, 24, 21, 0.7);
-  border-color: rgba(217, 93, 57, 0.35); /* Highlight with Terracotta on hover */
-  transform: translateY(-4px);
-  box-shadow: 0 20px 48px 0 rgba(217, 93, 57, 0.08);
-}
-
-.glass-header {
-  background-color: rgba(10, 8, 7, 0.85);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border-bottom: 1px solid rgba(245, 242, 235, 0.08);
-}
-
-.glass-pill {
-  background-color: rgba(245, 242, 235, 0.06);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(245, 242, 235, 0.12);
-  color: var(--color-pastel-cream);
-  border-radius: 9999px;
-}
-
-.glass-pill-active {
-  background-color: rgba(217, 93, 57, 0.2);
-  border-color: var(--color-faded-rose);
-  color: #fff;
-  box-shadow: 0 0 20px rgba(217, 93, 57, 0.25);
-}
-
-.gradient-overlay-dark {
-  background: linear-gradient(to top, #0A0807 0%, rgba(10, 8, 7, 0.7) 60%, rgba(10, 8, 7, 0.3) 100%);
-}
-
-.btn-primary {
-  background-color: var(--color-faded-rose);
-  color: white;
-  font-family: var(--font-sans);
-  font-weight: 700;
-  border-radius: 0.375rem;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-summary {
-  -webkit-tap-highlight-color: transparent;
-}
-
-@media (max-width: 767px) {
   body {
-    padding-bottom: calc(4.75rem + env(safe-area-inset-bottom));
+    background-color: var(--bg-canvas);
+    color: var(--text-obsidian);
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Tipografía de Ultra Lujo */
+  .font-display {
+    font-family: "Playfair Display", Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-serif-italic {
+    font-family: "Playfair Display", Georgia, serif;
+    font-style: italic;
+  }
+
+  .font-italiana {
+    font-family: "Italiana", serif;
   }
 }
 
-.moon-range {
-  height: 0.35rem;
-  cursor: pointer;
-  appearance: none;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.18);
+/* Efectos de Superficie y Vidrio Cápsula */
+.glass-island {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 20px 50px -10px rgba(28, 22, 18, 0.07), 0 0 0 1px rgba(28, 22, 18, 0.03);
 }
 
-.moon-range::-webkit-slider-thumb {
-  width: 1.25rem;
-  height: 1.25rem;
-  appearance: none;
-  border: 4px solid #f5f1e8;
-  border-radius: 999px;
-  background: #bb5638;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+.glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(232, 225, 213, 0.7);
+  box-shadow: 0 25px 60px -15px rgba(28, 22, 18, 0.05);
 }
 
-.moon-range::-moz-range-thumb {
-  width: 0.85rem;
-  height: 0.85rem;
-  border: 4px solid #f5f1e8;
-  border-radius: 999px;
-  background: #bb5638;
+.ambient-desert-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(244, 239, 230, 0.9) 0%, rgba(250, 247, 242, 1) 75%);
 }
 
-:focus-visible {
-  outline: 2px solid #f0b08c;
-  outline-offset: 3px;
+.ambient-sunset-flare {
+  background: radial-gradient(circle at 85% 15%, rgba(200, 91, 62, 0.07) 0%, transparent 65%);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
+/* Scrollbar estética */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
-.btn-primary:hover {
-  background-color: #e26e4e;
-  box-shadow: 0 8px 30px rgba(217, 93, 57, 0.35);
-  transform: translateY(-2px);
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
 }
-
-::selection {
-  background: #bb5638;
-  color: #fffaf0;
+::-webkit-scrollbar-thumb {
+  background: #D9CDB8;
+  border-radius: 3px;
 }
-
-@supports (backdrop-filter: blur(18px)) {
-  .moon-nav-surface {
-    background: rgba(12, 24, 25, 0.84);
-    backdrop-filter: blur(18px) saturate(135%);
-    -webkit-backdrop-filter: blur(18px) saturate(135%);
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: #C85B3E;
 }

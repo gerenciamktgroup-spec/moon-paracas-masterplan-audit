@@ -89,7 +89,7 @@ const FitRouteBounds = () => {
     const startMarker = new google.maps.Marker({
       position: routeCoords[0],
       map: map,
-      title: "Inicio: Panamericana Sur Km 254",
+      title: "Inicio: Panamericana Sur Km 240",
       icon: pinIconStart
     });
 
@@ -215,7 +215,7 @@ export const AccessRoute: React.FC = () => {
             <div className="flex gap-3">
               <MapPin className="w-4 h-4 text-[#E2725B] shrink-0 mt-0.5" />
               <div>
-                <h5 className="text-[11px] font-bold text-white uppercase tracking-wider">Km 254 Panamericana Sur</h5>
+                <h5 className="text-[11px] font-bold text-white uppercase tracking-wider">Km 240 Panamericana Sur</h5>
                 <p className="text-[10px] text-stone-400 mt-0.5 leading-relaxed">
                   Punto de partida referencial. El acceso, derecho de paso, tiempos y conexión vial deben validarse mediante visita y documentación vigente.
                 </p>

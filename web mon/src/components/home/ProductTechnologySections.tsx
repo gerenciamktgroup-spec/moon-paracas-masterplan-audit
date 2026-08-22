@@ -101,7 +101,7 @@ export const DomeSystemSection: React.FC = () => {
   const ActiveIcon = activeSystem.icon;
 
   return (
-    <section id="arquitectura" className="scroll-mt-24 bg-[#e2e5dd] py-20 md:py-28">
+    <section id="arquitectura" className="scroll-mt-24 bg-[#F4EFE6] py-20 md:py-28">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12">
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <SectionHeading
@@ -109,12 +109,12 @@ export const DomeSystemSection: React.FC = () => {
             title="Domo 50: un sistema que puede crecer contigo."
             description="Explora qué pertenece a la estructura, qué mejora el confort y qué módulos construyen autonomía. Cada capa se presenta con un alcance concreto."
           />
-          <p className="max-w-sm border-l border-[#18353b]/20 pl-5 text-xs leading-6 text-[#5f6b65]">
+          <p className="max-w-sm border-l border-[#1C1612]/20 pl-5 text-xs leading-6 text-[#5f6b65]">
             La configuración final depende del paquete y los upgrades elegidos. Nada opcional se presenta como incluido.
           </p>
         </div>
 
-        <div className="mt-12 grid overflow-hidden rounded-md border border-[#18353b]/15 bg-[#f5f3ec] lg:grid-cols-[1.08fr_0.92fr]">
+        <div className="mt-12 grid overflow-hidden rounded-md border border-[#1C1612]/15 bg-[#f5f3ec] lg:grid-cols-[1.08fr_0.92fr]">
           <div className="relative min-h-[420px] overflow-hidden lg:min-h-[620px]">
             <img
               key={activeSystem.image}
@@ -147,7 +147,7 @@ export const DomeSystemSection: React.FC = () => {
                     aria-pressed={active}
                     onClick={() => setActiveId(system.id)}
                     className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-[4px] px-2 text-[10px] font-bold uppercase transition-colors ${
-                      active ? "bg-[#18353b] text-white shadow-sm" : "text-[#53625d] hover:bg-white/65"
+                      active ? "bg-[#1C1612] text-white shadow-sm" : "text-[#53625d] hover:bg-white/65"
                     }`}
                   >
                     <Icon className="hidden h-4 w-4 sm:block" aria-hidden="true" />
@@ -159,11 +159,11 @@ export const DomeSystemSection: React.FC = () => {
 
             <div className="flex flex-1 flex-col justify-center py-10" aria-live="polite">
               <p className="text-[10px] font-bold uppercase text-[#a44c36]">Capa {domeSystems.findIndex((system) => system.id === activeId) + 1} de 3</p>
-              <h3 className="mt-4 max-w-xl font-display text-4xl font-semibold leading-tight text-[#18353b] md:text-5xl">
+              <h3 className="moon-title mt-4 max-w-xl font-semibold text-[#1C1612]">
                 {activeSystem.title}
               </h3>
               <p className="mt-5 max-w-xl text-sm leading-7 text-[#5e6964]">{activeSystem.description}</p>
-              <ul className="mt-8 space-y-4 border-t border-[#18353b]/12 pt-7">
+              <ul className="mt-8 space-y-4 border-t border-[#1C1612]/12 pt-7">
                 {activeSystem.points.map((point) => (
                   <li key={point} className="flex items-start gap-3 text-sm font-semibold leading-6 text-[#344b49]">
                     <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#c96549]/12 text-[#a44c36]">
@@ -189,7 +189,7 @@ export const DomeSystemSection: React.FC = () => {
 };
 
 export const EnvironmentalSystemsSection: React.FC = () => (
-  <section id="sistemas" className="scroll-mt-24 bg-[#18353b] py-20 text-white md:py-28">
+  <section id="sistemas" className="scroll-mt-24 bg-[#1C1612] py-20 text-white md:py-28">
     <div className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12">
       <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
         <SectionHeading

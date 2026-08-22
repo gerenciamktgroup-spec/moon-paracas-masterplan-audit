@@ -5,52 +5,58 @@ import { SectionHeading } from "./SectionHeading";
 
 const experienceImages = [
   {
-    src: "/media/interior_dome_sunrise.png",
-    alt: "Interior de domo geodésico con vista abierta al desierto al amanecer",
-    label: "Despertar con horizonte",
+    src: "/media/gallery/Sunrise_from_bed_desert_202606170004.mp4",
+    alt: "Amanecer desde el interior del domo sobre la pampa",
+    label: "Despertar",
+    type: "video" as const,
     className: "md:col-span-2 md:row-span-2",
   },
   {
-    src: "/media/concept_oasis_2.jpeg",
-    alt: "Espejo de agua y pérgola solar en el eje central de Moon Paracas",
-    label: "El agua como pausa",
+    src: "/media/gallery/Fire_crackles_in_stone_pit_202606170004.mp4",
+    alt: "Fogón de piedra en la pampa inland",
+    label: "Fogón",
+    type: "video" as const,
     className: "md:col-span-2",
   },
   {
     src: "/media/stargazing_deck_night.png",
+    avif: "/media/stargazing_deck_night.avif",
     alt: "Deck privado de observación astronómica bajo el cielo de Paracas",
     label: "Noches sin ruido",
+    type: "image" as const,
     className: "md:col-span-1",
   },
   {
-    src: "/media/gallery_10.jpeg",
-    alt: "Piscina de formas orgánicas iluminada al atardecer",
-    label: "Oasis al atardecer",
+    src: "/media/gallery/Walking_down_sandy_road_at_202606170004.mp4",
+    alt: "Camino de tierra compacta entre agaves y adobe",
+    label: "El camino",
+    type: "video" as const,
     className: "md:col-span-1",
   },
   {
     src: "/media/gallery/Adobe_house_with_solar_panels_202606170004.webp",
     alt: "Arquitectura de adobe y paneles solares integrada al paisaje árido",
     label: "Autonomía solar",
+    type: "image" as const,
     className: "md:col-span-4",
   },
 ];
 
 export function VisionSection() {
   return (
-  <section id="vision" className="relative scroll-mt-24 overflow-hidden bg-[#f2f0e9] py-20 md:py-28">
-    <div className="pointer-events-none absolute -left-36 top-24 h-72 w-72 rounded-full border border-[#18353b]/6" aria-hidden="true" />
+  <section id="vision" className="relative scroll-mt-24 overflow-hidden bg-[#FAF8F5] py-20 md:py-28">
+    <div className="pointer-events-none absolute -left-36 top-24 h-72 w-72 rounded-full border border-[#1C1612]/6" aria-hidden="true" />
     <div className="relative mx-auto grid max-w-[1400px] gap-14 px-5 sm:px-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-center lg:px-12">
       <div>
         <SectionHeading
-          eyebrow="La visión"
+          eyebrow="I · Tierra"
           title="Hay lugares que no se compran. Se eligen para volver a uno mismo."
-          description="Moon Paracas nace para quienes ya no buscan más ruido, sino más espacio. Un refugio sin cercos, con arquitectura que toca la tierra con ligereza y una comunidad que comparte el mismo respeto por el paisaje."
+          description="Un refugio sin cercos. Arquitectura que toca la tierra con ligereza. Una comunidad que comparte el mismo respeto por el paisaje."
         />
-        <blockquote className="mt-9 max-w-xl border-l-2 border-[#b55034] pl-6 font-display text-2xl leading-snug text-[#28494d] md:text-3xl">
+        <blockquote className="moon-lede mt-8 max-w-xl border-l-2 border-[#C85B3E] pl-5 text-[#3D352E]">
           “El verdadero lujo aquí es tener horizonte, silencio y tiempo.”
         </blockquote>
-        <div className="mt-9 grid grid-cols-2 gap-x-8 gap-y-6 border-t border-[#18353b]/15 pt-7">
+        <div className="mt-9 grid grid-cols-2 gap-x-8 gap-y-6 border-t border-[#1C1612]/15 pt-7">
           {[
             ["50 m²", "Domo geodésico"],
             ["Solar", "Energía autónoma"],
@@ -58,7 +64,7 @@ export function VisionSection() {
             ["Paracas", "Ica, Perú"],
           ].map(([value, label]) => (
             <div key={label}>
-              <p className="font-display text-2xl font-semibold text-[#18353b]">{value}</p>
+              <p className="font-display text-2xl font-semibold text-[#1C1612]">{value}</p>
               <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.14em] text-[#737b72]">{label}</p>
             </div>
           ))}
@@ -133,17 +139,16 @@ export const ExperienceSection: React.FC = () => {
   };
 
   return (
-    <section id="experiencia" className="scroll-mt-24 bg-[#1d241f] py-20 text-white md:py-28">
+    <section id="experiencia" className="scroll-mt-24 bg-transparent py-20 text-[#1C1612] md:py-28">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12">
         <div className="flex flex-col justify-between gap-7 lg:flex-row lg:items-end">
           <SectionHeading
-            eyebrow="Vive la experiencia"
+            eyebrow="III · Materia"
             title="La luz cambia. El cuerpo baja el ritmo."
-            description="Piedra, adobe, madera, agua y cielo abierto. Cada imagen traduce el lenguaje material que define la experiencia Moon."
-            inverse
+            description="Piedra, adobe, lino, fuego y cielo. El mismo paisaje, respirando."
           />
-          <p className="max-w-sm text-xs leading-6 text-white/55">
-            Selecciona una imagen para verla a pantalla completa.
+          <p className="max-w-sm text-xs leading-6 text-[#786F66]">
+            Elige una pieza. Algunas respiran solas.
           </p>
         </div>
 
@@ -156,12 +161,27 @@ export const ExperienceSection: React.FC = () => {
               className={`group relative overflow-hidden rounded-md text-left focus:outline-none focus:ring-2 focus:ring-[#f0b08c] ${image.className}`}
               aria-label={`Ampliar: ${image.label}`}
             >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                loading="lazy"
-              />
+              {image.type === "video" ? (
+                <video
+                  src={image.src}
+                  muted
+                  loop
+                  playsInline
+                  autoPlay
+                  preload="metadata"
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              ) : (
+                <picture>
+                  {"avif" in image && image.avif ? <source type="image/avif" srcSet={image.avif} /> : null}
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </picture>
+              )}
               <span className="absolute inset-0 bg-[linear-gradient(0deg,rgba(9,16,14,0.75)_0%,transparent_55%)]" />
               <span className="absolute bottom-0 left-0 p-5 font-display text-xl font-semibold text-white">{image.label}</span>
             </button>
@@ -197,11 +217,22 @@ export const ExperienceSection: React.FC = () => {
             <ChevronLeft className="h-6 w-6" />
           </button>
           <figure className="max-w-6xl" onClick={(event) => event.stopPropagation()}>
-            <img
-              src={experienceImages[activeIndex].src}
-              alt={experienceImages[activeIndex].alt}
-              className="max-h-[80vh] max-w-full rounded-md object-contain"
-            />
+            {experienceImages[activeIndex].type === "video" ? (
+              <video
+                src={experienceImages[activeIndex].src}
+                controls
+                autoPlay
+                loop
+                playsInline
+                className="max-h-[80vh] max-w-full rounded-md object-contain"
+              />
+            ) : (
+              <img
+                src={experienceImages[activeIndex].src}
+                alt={experienceImages[activeIndex].alt}
+                className="max-h-[80vh] max-w-full rounded-md object-contain"
+              />
+            )}
             <figcaption className="mt-4 text-center font-display text-xl text-white">
               {experienceImages[activeIndex].label}
             </figcaption>

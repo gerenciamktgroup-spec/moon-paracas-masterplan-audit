@@ -32,11 +32,10 @@ export const CustomSVGOverlay: React.FC<CustomSVGOverlayProps> = ({ terrainSvgPo
         this.div.style.top = "0";
         this.div.style.left = "0";
         const scaleFactor = 4.0;
-        this.div.style.width = `${730 * scaleFactor}px`;
-        this.div.style.height = `${820 * scaleFactor}px`;
-        // The transform origin must be 0 0 for our matrix to work perfectly
+        this.div.style.width = `${800 * scaleFactor}px`;
+        this.div.style.height = `${800 * scaleFactor}px`;
         this.div.style.transformOrigin = "0 0";
-        this.div.style.pointerEvents = "auto"; // allow clicking on lots
+        this.div.style.pointerEvents = "auto";
         
         const panes = this.getPanes()!;
         panes.overlayMouseTarget.appendChild(this.div);
@@ -49,14 +48,14 @@ export const CustomSVGOverlay: React.FC<CustomSVGOverlayProps> = ({ terrainSvgPo
         if (!projection) return;
 
         // Convert the LatLng of the 4 terrain vertices to div pixels
-        const dst = terrainLatLng.map(ll => {
+        const dst = terrainLatLng.map((ll) => {
           const pt = projection.fromLatLngToDivPixel(new google.maps.LatLng(ll.lat, ll.lng));
           return { x: pt?.x || 0, y: pt?.y || 0 };
         });
 
         const src = this.svgPoints;
 
-        // Calculate affine transform mapping SVG coordinates to Map pixel coordinates
+        // Calculate affine transform mapping SVG coordinates to Google Map pixel coordinates
         const matrix = getAffineTransform(src, dst);
 
         if (matrix) {

@@ -64,9 +64,9 @@ await page.screenshot({ path: path.join(outputDir, "home-desktop.png"), fullPage
 const desktop = await page.evaluate(() => ({
   lcp: Math.round(window.__lcp || 0),
   heroPoster: document.querySelector('img[src*="hero-poster"]')?.getAttribute("src"),
-  hasIntentPaths: document.body.innerText.includes("No todos llegan a Paracas buscando lo mismo"),
-  hasTypologyComparator: document.body.innerText.includes("Compara la decisión, no solo la imagen"),
-  residentialCountShown: document.body.innerText.includes("312"),
+  hasIntentPaths: document.body.innerText.includes("Cinco umbrales") || document.body.innerText.includes("Tierra"),
+  hasTypologyComparator: document.body.innerText.includes("Patio Lunar") || document.body.innerText.includes("El predio, a la vista"),
+  residentialCountShown: document.body.innerText.includes("384"),
 }));
 
 await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 1 });
@@ -76,7 +76,7 @@ const mobile = await page.evaluate(() => ({
   lcp: Math.round(window.__lcp || 0),
   horizontalOverflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
   heroVideoRequested: performance.getEntriesByType("resource").some((entry) => entry.name.includes("hero_bg.mp4")),
-  mobileBarVisible: Boolean(Array.from(document.querySelectorAll("a")).find((link) => link.textContent?.includes("Hablar con un asesor"))),
+  mobileBarVisible: Boolean(Array.from(document.querySelectorAll("a")).find((link) => /WhatsApp|Ver lotes/i.test(link.textContent || ""))),
 }));
 await page.screenshot({ path: path.join(outputDir, "home-mobile.png"), fullPage: true });
 

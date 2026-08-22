@@ -18,16 +18,15 @@ export function SectionHeading({
   return (
     <div className={`${centered ? "mx-auto text-center" : "text-left"} max-w-3xl`}>
       <p
-        className={`flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.22em] ${centered ? "justify-center" : ""} ${
-          inverse ? "text-[#e8a17e]" : "text-[#a9472d]"
+        className={`font-display italic text-xl ${centered ? "justify-center" : ""} ${
+          inverse ? "text-[#e8a17e]" : "text-[#A84F36]"
         }`}
       >
-        <span className={`h-px w-8 ${inverse ? "bg-[#e8a17e]/65" : "bg-[#a9472d]/55"}`} aria-hidden="true" />
         {eyebrow}
       </p>
       <h2
-        className={`mt-4 font-display text-[clamp(2.55rem,4.5vw,4.6rem)] font-semibold leading-[0.98] tracking-[-0.025em] ${
-          inverse ? "text-[#f5f1e8]" : "text-[#18353b]"
+        className={`moon-title mt-3 font-semibold ${
+          inverse ? "text-[#f5f1e8]" : "text-[#1C1612]"
         }`}
       >
         {title}
@@ -35,7 +34,7 @@ export function SectionHeading({
       {description && (
         <p
           className={`mt-6 max-w-2xl text-sm leading-7 md:text-[15px] md:leading-8 ${centered ? "mx-auto" : ""} ${
-            inverse ? "text-white/62" : "text-[#5c6862]"
+            inverse ? "text-white/62" : "text-[#3D352E]"
           }`}
         >
           {description}

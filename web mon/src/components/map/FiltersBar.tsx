@@ -67,7 +67,10 @@ export function FiltersBar({
             onChange={e => onChange({ ...filters, blockId: e.target.value as any })}
           >
             <option value="all" className="bg-[#1D1714] text-white">Todas las aldeas</option>
-            {Array.from({ length: 4 }, (_, index) => `C${index + 1}`).map((id) => <option key={id} value={id} className="bg-[#1D1714] text-white">Aldea {id}</option>)}
+            <option value="A1" className="bg-[#1D1714] text-white">Aldea 1 (Oeste · 96 Lotes)</option>
+            <option value="A2" className="bg-[#1D1714] text-white">Aldea 2 (Norte · 96 Lotes)</option>
+            <option value="A3" className="bg-[#1D1714] text-white">Aldea 3 (Este · 96 Lotes)</option>
+            <option value="A4" className="bg-[#1D1714] text-white">Aldea 4 (Sur · 96 Lotes)</option>
           </select>
           <select
             aria-label="Filtrar por estado comercial"

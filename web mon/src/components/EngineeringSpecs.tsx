@@ -44,10 +44,10 @@ export const EngineeringSpecs: React.FC = () => {
   return (
     <div className="max-w-[1200px] mx-auto space-y-10">
       <div className="text-center space-y-3 max-w-3xl mx-auto">
-        <h3 className="font-display text-3xl sm:text-4xl font-bold text-white uppercase tracking-wide">
-          Seguridad, Paisajismo <span className="text-[#E2725B] font-light">e Ingeniería</span>
+        <h3 className="font-display text-3xl sm:text-4xl font-bold text-[#1C1612] uppercase tracking-wide">
+          Seguridad, Paisajismo <span className="text-[#C85B3E] font-light">e Ingeniería</span>
         </h3>
-        <p className="text-stone-300 max-w-2xl mx-auto text-xs sm:text-sm font-light leading-relaxed">
+        <p className="text-[#786F66] max-w-2xl mx-auto text-xs sm:text-sm leading-relaxed">
           Criterios preliminares para revisar con ingeniería, permisos y especificaciones firmadas antes de construir.
         </p>
       </div>
@@ -57,21 +57,21 @@ export const EngineeringSpecs: React.FC = () => {
         {specs.map((spec, index) => (
           <div 
             key={index} 
-            className="group relative border border-white/10 hover:border-[#E2725B]/40 bg-[#1D1714]/25 p-6 rounded-none flex flex-col justify-between min-h-[250px] transition-all duration-300 hover:translate-y-[-4px] shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[#E2725B]/5"
+            className="group relative border border-[#E8E1D5] hover:border-[#C85B3E]/40 bg-white p-6 rounded-none flex flex-col justify-between min-h-[250px] transition-all duration-300 hover:translate-y-[-4px] shadow-[0_8px_30px_rgba(28,22,18,0.06)]"
           >
             {/* Elegant Number overlay on top-right */}
-            <span className="absolute top-4 right-6 text-6xl font-display font-black text-[#E1D9C1]/5 select-none pointer-events-none transition-colors group-hover:text-[#E2725B]/10">
+            <span className="absolute top-4 right-6 text-6xl font-display font-black text-[#1C1612]/5 select-none pointer-events-none transition-colors group-hover:text-[#C85B3E]/10">
               {spec.num}
             </span>
 
             <div className="space-y-4">
-              <div className="p-3 bg-stone-900/40 border border-white/5 inline-flex items-center justify-center rounded-none text-[#E2725B] transition-colors group-hover:bg-[#E2725B]/10">
+              <div className="p-3 bg-[#F4EFE6] border border-[#E8E1D5] inline-flex items-center justify-center rounded-none text-[#C85B3E] transition-colors group-hover:bg-[#C85B3E]/10">
                 {spec.icon}
               </div>
-              <h4 className="font-display text-base font-bold text-white uppercase tracking-wide leading-tight group-hover:text-[#E2725B] transition-colors text-left">
+              <h4 className="font-display text-base font-bold text-[#1C1612] uppercase tracking-wide leading-tight group-hover:text-[#C85B3E] transition-colors text-left">
                 {spec.title}
               </h4>
-              <p className="text-xs text-stone-300 leading-relaxed font-light font-sans text-left">
+              <p className="text-xs text-[#3D352E] leading-relaxed font-sans text-left">
                 {spec.content}
               </p>
             </div>

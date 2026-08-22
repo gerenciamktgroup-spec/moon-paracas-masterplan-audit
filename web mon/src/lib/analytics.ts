@@ -10,8 +10,11 @@ export type AnalyticsEvent =
   | "shortlist_remove"
   | "shortlist_share"
   | "start_reservation"
+  | "whatsapp_click"
   | "submit_lead"
   | "lead_submitted"
+  | "download_dossier"
+  | "schedule_visit"
   | "payment_result";
 
 type AnalyticsProperties = Record<string, string | number | boolean | null>;

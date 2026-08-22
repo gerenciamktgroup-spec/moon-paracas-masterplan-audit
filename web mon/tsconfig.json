@@ -24,5 +24,6 @@
     "allowImportingTsExtensions": true,
     "noEmit": true
   },
-  "exclude": ["node_modules", "dist", "seed.ts"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "seed.ts", "scripts", "__count_tmp.ts", "generate_lots_json.ts", "seed_db.ts", "spatial_audit.ts"]
 }
