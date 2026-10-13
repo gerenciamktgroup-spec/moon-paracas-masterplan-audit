@@ -68,7 +68,7 @@ export const Simulator: React.FC<SimulatorProps> = ({ lots, selectedLot, setSele
 
   return (
     <div className="relative min-h-[90vh] overflow-hidden bg-[#FAF8F5] text-[#1C1612]">
-      <div className="mx-auto max-w-[1440px] px-4 pt-4 pb-2 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1440px] px-4 pt-28 pb-4 sm:px-6 sm:pt-32 lg:px-8">
         {/* ── HEADER COMPACTO CON ESTADÍSTICAS RÁPIDAS ── */}
         <div className="mb-4 flex flex-col justify-between gap-4 rounded-xl border border-[#E8E1D5] bg-white/90 p-4 shadow-[0_12px_30px_rgba(28,22,18,0.05)] backdrop-blur-md lg:flex-row lg:items-center">
           <div>

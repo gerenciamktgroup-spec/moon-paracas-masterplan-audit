@@ -15,7 +15,7 @@ export function InteriorHero({ eyebrow, title, description, index = "Moon Paraca
       <div className="absolute inset-y-0 left-[8%] -z-10 w-px bg-[#E8E1D5]" aria-hidden="true" />
       <div className="absolute inset-y-0 right-[8%] -z-10 w-px bg-[#E8E1D5]" aria-hidden="true" />
 
-      <div className="mx-auto grid min-h-[320px] max-w-[1400px] items-end gap-8 px-5 pb-12 pt-12 sm:px-8 sm:pb-14 lg:grid-cols-[minmax(0,1fr)_minmax(260px,0.42fr)] lg:px-12 lg:pb-16 lg:pt-20">
+      <div className="mx-auto grid min-h-[320px] max-w-[1400px] items-end gap-8 px-5 pb-12 pt-28 sm:px-8 sm:pb-14 sm:pt-32 lg:grid-cols-[minmax(0,1fr)_minmax(260px,0.42fr)] lg:px-12 lg:pb-16 lg:pt-36">
         <div className="max-w-4xl">
           <div className="mb-8 flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.22em] text-[#A84F36]">
             <span className="h-px w-10 bg-[#C85B3E]" aria-hidden="true" />

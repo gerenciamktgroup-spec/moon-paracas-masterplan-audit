@@ -204,7 +204,7 @@ export function DocumentCenter() {
       {/* ── HERO BANNER DE LA BÓVEDA DOCUMENTAL ── */}
       <section className="relative overflow-hidden border-b border-[#E8E1D5] bg-[#F4EFE6]">
         <div className="absolute inset-0 bg-[radial-gradient(#C5A059_1px,transparent_1px)] [background-size:24px_24px] opacity-20" aria-hidden="true" />
-        <div className="relative mx-auto max-w-[1240px] px-5 py-16 sm:px-8 md:py-24 lg:px-12">
+        <div className="relative mx-auto max-w-[1240px] px-5 pt-28 pb-16 sm:px-8 sm:pt-32 md:pb-24 lg:px-12">
           <div className="flex flex-wrap items-center gap-3 text-[10px] font-bold uppercase tracking-[0.22em] text-[#A84F36]">
             <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#C5A059]/50 bg-white font-display text-sm text-[#1C1612]">
               M

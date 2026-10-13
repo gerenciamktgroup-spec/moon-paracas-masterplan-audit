@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ProjectHero } from "../components/home/ProjectHero";
 import { MasterplanSection } from "../components/home/MasterplanSection";
 import { DomeBlueprintSection } from "../components/home/DomeBlueprintSection";
+import { SanctuaryGallerySection } from "../components/home/SanctuaryGallerySection";
 import { AirbnbRoiCalculator } from "../components/home/AirbnbRoiCalculator";
 import { FinancingSection } from "../components/home/FinancingSection";
 import { LegalAssociationSection } from "../components/home/LegalAssociationSection";
@@ -38,7 +39,10 @@ export const Home: React.FC<HomeProps> = ({ lots }) => {
       {/* 3. Arquitectura del Domo Ø8m & Bioclimática (Plano, Viento Paracas, Materiales) */}
       <DomeBlueprintSection />
 
-      {/* 4. Simulador de Rentabilidad Airbnb en Paracas + Comparativa con Lima */}
+      {/* 4. Archivo Visual & Colección de Fotos del Santuario */}
+      <SanctuaryGallerySection />
+
+      {/* 5. Simulador de Rentabilidad Airbnb en Paracas + Comparativa con Lima */}
       <AirbnbRoiCalculator />
 
       {/* 5. Calculadora de Financiamiento Directo (Hasta 36 cuotas) */}

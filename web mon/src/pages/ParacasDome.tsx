@@ -67,7 +67,7 @@ export const ParacasDome: React.FC<ParacasDomeProps> = ({
     <div className="bg-[#FAF8F5] text-[#1C1612] font-sans selection:bg-[#C5A059] selection:text-black">
       
       {/* 1. SECCIÓN 3D INTERACTIVA HEADLINER */}
-      <section className="pt-24 pb-16 px-4 sm:px-6 md:px-8 max-w-[1360px] mx-auto">
+      <section className="pt-28 sm:pt-32 pb-16 px-4 sm:px-6 md:px-8 max-w-[1360px] mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-10 space-y-3">
           <span className="inline-flex items-center gap-2 rounded-full border border-[#C5A059]/40 bg-white px-3.5 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#A84F36]">
             <Sparkles className="h-3.5 w-3.5 text-[#C5A059]" />

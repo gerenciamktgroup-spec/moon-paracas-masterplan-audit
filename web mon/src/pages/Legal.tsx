@@ -21,7 +21,7 @@ export const LegalPage = ({ type }: LegalPageProps) => {
   return (
     <div className="min-h-[90vh] bg-[#FAF8F5] text-[#1C1612]">
       <header className="border-b border-[#1C1612]/12 bg-[#f5f1e8]">
-        <div className="mx-auto grid max-w-[1400px] gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1fr_280px] lg:px-12 lg:py-24">
+        <div className="mx-auto grid max-w-[1400px] gap-10 px-5 pt-28 pb-16 sm:px-8 sm:pt-32 sm:pb-20 lg:grid-cols-[1fr_280px] lg:px-12 lg:py-24">
           <div>
             <p className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.22em] text-[#b55034]">
               {privacy ? <LockKeyhole className="h-4 w-4" /> : <FileCheck2 className="h-4 w-4" />}

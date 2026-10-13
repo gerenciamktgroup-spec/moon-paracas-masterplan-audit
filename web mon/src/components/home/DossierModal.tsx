@@ -3,6 +3,8 @@ import { X, FileText, CheckCircle2, Sparkles, ArrowRight, ShieldCheck, Download,
 import { CONTACT, whatsappHref } from "../../config/project";
 import { trackEvent } from "../../lib/analytics";
 
+import { submitLead } from "../../lib/leadService";
+
 interface DossierModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -13,7 +15,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose }) =
     name: "",
     whatsapp: "",
     email: "",
-    district: "Surco",
+    district: "Santiago de Surco",
     intent: "Segunda Vivienda & Escape",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -21,7 +23,7 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose }) =
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -30,24 +32,33 @@ export const DossierModal: React.FC<DossierModalProps> = ({ isOpen, onClose }) =
       intent: formData.intent,
     });
 
+    // Registrar lead real en Firebase Firestore & Backend
+    await submitLead({
+      name: formData.name,
+      phone: formData.whatsapp,
+      email: formData.email,
+      district: formData.district,
+      message: `Interés: ${formData.intent}. Solicitó Dossier Ejecutivo 2026.`,
+      channel: "website-dossier-modal",
+      inquiryType: "documents",
+    });
+
     // Generar mensaje de WhatsApp con los datos del lead para el equipo comercial
     const leadMsg = `Hola! Acabo de solicitar el Dossier de Inversión 2026 de Moon Paracas.\n\n*Mis Datos:*\n- Nombre: ${formData.name}\n- WhatsApp: ${formData.whatsapp}\n- Email: ${formData.email}\n- Distrito en Lima: ${formData.district}\n- Interés: ${formData.intent}\n\nPor favor, envíenme también la lista de lotes disponibles actualizados.`;
 
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
+    setIsSubmitting(false);
+    setIsSubmitted(true);
 
-      // Abrir PDF en nueva pestaña
-      const pdfUrl = "/documents/Moon_Paracas_Brochure_Comercial_V2.2_2026.pdf";
-      window.open(pdfUrl, "_blank");
+    // Abrir PDF en nueva pestaña
+    const pdfUrl = "/documents/Moon_Paracas_Brochure_Comercial_V2.2_2026.pdf";
+    window.open(pdfUrl, "_blank");
 
-      // Redirigir suavemente o preparar WhatsApp
-      if (CONTACT.whatsapp) {
-        setTimeout(() => {
-          window.open(whatsappHref(leadMsg), "_blank");
-        }, 1200);
-      }
-    }, 600);
+    // Redirigir suavemente a WhatsApp de ventas
+    if (CONTACT.whatsapp) {
+      setTimeout(() => {
+        window.open(whatsappHref(leadMsg), "_blank");
+      }, 1200);
+    }
   };
 
   return (

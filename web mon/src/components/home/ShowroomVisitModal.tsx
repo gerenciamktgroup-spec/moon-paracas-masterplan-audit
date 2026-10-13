@@ -3,6 +3,8 @@ import { X, Calendar, MapPin, Sparkles, MessageCircle, ShieldCheck, CheckCircle2
 import { CONTACT, whatsappHref } from "../../config/project";
 import { trackEvent } from "../../lib/analytics";
 
+import { submitLead } from "../../lib/leadService";
+
 interface ShowroomVisitModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -21,7 +23,7 @@ export const ShowroomVisitModal: React.FC<ShowroomVisitModalProps> = ({ isOpen, 
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     trackEvent("schedule_visit", {
@@ -34,6 +36,16 @@ export const ShowroomVisitModal: React.FC<ShowroomVisitModalProps> = ({ isOpen, 
       lima: "Reunión Privada en Showroom / Café Ejecutivo en Lima",
       zoom: "Videollamada 1 a 1 por Google Meet / Zoom",
     };
+
+    // Registrar lead real en Firebase Firestore & Backend
+    await submitLead({
+      name: formData.name,
+      phone: formData.phone,
+      email: formData.email,
+      message: `Tipo de Visita: ${expTitles[experienceType]}. Fecha solicitada: ${formData.preferredDay}. Asistentes: ${formData.partySize}.`,
+      channel: "website-showroom-modal",
+      inquiryType: "visit",
+    });
 
     const leadMsg = `Hola! Deseo agendar una *${expTitles[experienceType]}* para conocer Moon Paracas.\n\n*Mis Datos:*\n- Nombre: ${formData.name}\n- Teléfono: ${formData.phone}\n- Correo: ${formData.email}\n- Fecha estimada: ${formData.preferredDay}\n- Asistentes: ${formData.partySize}\n\nPor favor, confirmemos el horario disponible.`;
 

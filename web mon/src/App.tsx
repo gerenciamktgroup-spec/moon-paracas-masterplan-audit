@@ -37,6 +37,129 @@ const ScrollToTop = () => {
   return null;
 };
 
+interface AppShellProps {
+  lots: Lot[];
+  domeLots: Lot[];
+  selectedLot: Lot | null;
+  setSelectedLot: (lot: Lot | null) => void;
+  selectedDomeLot: Lot | null;
+  setSelectedDomeLot: (lot: Lot | null) => void;
+  handleReserveLot: (lotId: string, client?: ReservationClientData) => Promise<void>;
+  paymentRequest: { lotId: string; client: ReservationClientData } | null;
+  setPaymentRequest: (req: { lotId: string; client: ReservationClientData } | null) => void;
+  handlePaymentResult: (msg: string) => void;
+  toastMessage: string | null;
+  dossierOpen: boolean;
+  setDossierOpen: (open: boolean) => void;
+  showroomOpen: boolean;
+  setShowroomOpen: (open: boolean) => void;
+}
+
+function AppShell(props: AppShellProps) {
+  const location = useLocation();
+  const isCrmRoute = ["/crm", "/intranet", "/asesores"].some((path) =>
+    location.pathname.startsWith(path)
+  );
+
+  return (
+    <div className="min-h-[100dvh] font-sans selection:bg-[#C85B3E] selection:text-white flex flex-col relative overflow-hidden bg-[#FAF8F5]">
+      <div className="fixed inset-0 z-0 bg-[#FAF8F5]" aria-hidden="true" />
+
+      <div className="relative z-10 flex flex-col min-h-screen">
+        {!isCrmRoute && (
+          <Header 
+            onOpenDossier={() => props.setDossierOpen(true)}
+            onOpenShowroom={() => props.setShowroomOpen(true)}
+          />
+        )}
+
+        {props.paymentRequest && (
+          <PaymentDialog
+            lotId={props.paymentRequest.lotId}
+            client={props.paymentRequest.client}
+            onClose={() => props.setPaymentRequest(null)}
+            onResult={props.handlePaymentResult}
+          />
+        )}
+
+        {/* Toast Notification */}
+        {props.toastMessage && (
+          <div className="fixed bottom-5 right-5 z-50 rounded-xl bg-white px-5 py-4 text-sm text-[#1C1612] border border-[#E8E1D5] flex items-center gap-3 shadow-[0_16px_40px_rgba(28,22,18,0.12)] animate-fade-in">
+            <ShieldCheck className="h-5 w-5 text-[#C85B3E]" />
+            <span className="font-bold tracking-wide">{props.toastMessage}</span>
+          </div>
+        )}
+
+        {/* Modales Globales de Dossier y Showroom */}
+        <DossierModal 
+          isOpen={props.dossierOpen} 
+          onClose={() => props.setDossierOpen(false)} 
+        />
+        <ShowroomVisitModal 
+          isOpen={props.showroomOpen} 
+          onClose={() => props.setShowroomOpen(false)} 
+        />
+
+        <main className="flex-1 relative z-10">
+          <Suspense
+            fallback={
+              <div className="flex min-h-[55vh] flex-col items-center justify-center bg-[#FAF8F5] px-6 text-center">
+                <p className="moon-title text-[#1C1612]">La pampa tarda un segundo en aparecer.</p>
+                <p className="mt-3 font-display italic text-lg text-[#A84F36]">Abriendo Moon Paracas</p>
+              </div>
+            }
+          >
+            <Routes>
+              <Route path="/" element={<Home lots={props.lots} domeLots={props.domeLots} />} />
+              
+              <Route path="/simulador" element={
+                <Simulator 
+                  lots={props.lots} 
+                  selectedLot={props.selectedLot} 
+                  setSelectedLot={props.setSelectedLot} 
+                  handleReserveLot={props.handleReserveLot} 
+                />
+              } />
+              
+              <Route path="/paracas-dome/*" element={
+                <ParacasDome 
+                  lots={props.domeLots} 
+                  selectedLot={props.selectedDomeLot} 
+                  setSelectedLot={props.setSelectedDomeLot} 
+                  handleReserveLot={props.handleReserveLot} 
+                />
+              } />
+              
+              <Route path="/galeria" element={<Gallery />} />
+              <Route path="/experiencia" element={<Experience />} />
+              <Route path="/tecnica" element={<Technical />} />
+              <Route path="/documentos" element={<DocumentCenter />} />
+              <Route path="/cielo" element={<Cielo />} />
+              <Route path="/crm" element={<CrmIntranet />} />
+              <Route path="/intranet" element={<CrmIntranet />} />
+              <Route path="/asesores" element={<CrmIntranet />} />
+              <Route path="/privacidad" element={<LegalPage type="privacy" />} />
+              <Route path="/terminos" element={<LegalPage type="terms" />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
+        </main>
+
+        {!isCrmRoute && (
+          <>
+            <Footer 
+              selectedLot={props.selectedLot} 
+              onOpenDossier={() => props.setDossierOpen(true)}
+              onOpenShowroom={() => props.setShowroomOpen(true)}
+            />
+            <PrivacyMetrics />
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
   // Moon Paracas Lot state
   const [lots, setLots] = useState<Lot[]>([]);
@@ -78,9 +201,6 @@ export default function App() {
             const remoteLot = remoteLots.get(lot.id) ?? (lot.legacyId ? remoteLots.get(lot.legacyId) : undefined);
             return {
               ...lot,
-              // V4 protects every commercial commitment inherited from V3/V2.2.
-              // Stale remote "available" records must never reopen sold, reserved,
-              // offer or blocked lots in the public simulator.
               status: lot.status !== "available" ? lot.status : (remoteLot?.status ?? lot.status),
               availableOffers: remoteLot?.availableOffers ?? lot.availableOffers,
               defaultOfferId: remoteLot?.defaultOfferId ?? lot.defaultOfferId,
@@ -160,98 +280,23 @@ export default function App() {
     <BrowserRouter>
       <PageMeta />
       <ScrollToTop />
-      <div className="min-h-[100dvh] font-sans selection:bg-[#C85B3E] selection:text-white flex flex-col relative overflow-hidden bg-[#FAF8F5]">
-        
-        <div className="fixed inset-0 z-0 bg-[#FAF8F5]" aria-hidden="true" />
-
-        <div className="relative z-10 flex flex-col min-h-screen">
-          <Header 
-            onOpenDossier={() => setDossierOpen(true)}
-            onOpenShowroom={() => setShowroomOpen(true)}
-          />
-
-          {paymentRequest && (
-            <PaymentDialog
-              lotId={paymentRequest.lotId}
-              client={paymentRequest.client}
-              onClose={() => setPaymentRequest(null)}
-              onResult={handlePaymentResult}
-            />
-          )}
-
-          {/* Toast Notification */}
-          {toastMessage && (
-            <div className="fixed bottom-5 right-5 z-50 rounded-xl bg-white px-5 py-4 text-sm text-[#1C1612] border border-[#E8E1D5] flex items-center gap-3 shadow-[0_16px_40px_rgba(28,22,18,0.12)] animate-fade-in">
-              <ShieldCheck className="h-5 w-5 text-[#C85B3E]" />
-              <span className="font-bold tracking-wide">{toastMessage}</span>
-            </div>
-          )}
-
-          {/* Modales Globales de Dossier y Showroom */}
-          <DossierModal 
-            isOpen={dossierOpen} 
-            onClose={() => setDossierOpen(false)} 
-          />
-          <ShowroomVisitModal 
-            isOpen={showroomOpen} 
-            onClose={() => setShowroomOpen(false)} 
-          />
-
-          <main className="flex-1 relative z-10">
-            <Suspense
-              fallback={
-                <div className="flex min-h-[55vh] flex-col items-center justify-center bg-[#FAF8F5] px-6 text-center">
-                  <p className="moon-title text-[#1C1612]">La pampa tarda un segundo en aparecer.</p>
-                  <p className="mt-3 font-display italic text-lg text-[#A84F36]">Abriendo Moon Paracas</p>
-                </div>
-              }
-            >
-              <Routes>
-              <Route path="/" element={<Home lots={lots} domeLots={domeLots} />} />
-              
-              <Route path="/simulador" element={
-                <Simulator 
-                  lots={lots} 
-                  selectedLot={selectedLot} 
-                  setSelectedLot={setSelectedLot} 
-                  handleReserveLot={handleReserveLot} 
-                />
-              } />
-              
-              <Route path="/paracas-dome/*" element={
-                <ParacasDome 
-                  lots={domeLots} 
-                  selectedLot={selectedDomeLot} 
-                  setSelectedLot={setSelectedDomeLot} 
-                  handleReserveLot={handleReserveLot} 
-                />
-              } />
-              
-              <Route path="/galeria" element={<Gallery />} />
-              <Route path="/experiencia" element={<Experience />} />
-              <Route path="/tecnica" element={<Technical />} />
-              <Route path="/documentos" element={<DocumentCenter />} />
-              <Route path="/cielo" element={<Cielo />} />
-              <Route path="/crm" element={<CrmIntranet />} />
-              <Route path="/intranet" element={<CrmIntranet />} />
-              <Route path="/asesores" element={<CrmIntranet />} />
-              <Route path="/privacidad" element={<LegalPage type="privacy" />} />
-              <Route path="/terminos" element={<LegalPage type="terms" />} />
-              <Route path="*" element={<NotFound />} />
-              </Routes>
-            </Suspense>
-          </main>
-
-          {/* Global Footer (Contáctanos) */}
-          <Footer 
-            selectedLot={selectedLot} 
-            onOpenDossier={() => setDossierOpen(true)}
-            onOpenShowroom={() => setShowroomOpen(true)}
-          />
-          <PrivacyMetrics />
-        </div>
-      </div>
+      <AppShell
+        lots={lots}
+        domeLots={domeLots}
+        selectedLot={selectedLot}
+        setSelectedLot={setSelectedLot}
+        selectedDomeLot={selectedDomeLot}
+        setSelectedDomeLot={setSelectedDomeLot}
+        handleReserveLot={handleReserveLot}
+        paymentRequest={paymentRequest}
+        setPaymentRequest={setPaymentRequest}
+        handlePaymentResult={handlePaymentResult}
+        toastMessage={toastMessage}
+        dossierOpen={dossierOpen}
+        setDossierOpen={setDossierOpen}
+        showroomOpen={showroomOpen}
+        setShowroomOpen={setShowroomOpen}
+      />
     </BrowserRouter>
   );
 }
-

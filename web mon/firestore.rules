@@ -2,6 +2,12 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
+    function isValidLead(data) {
+      return data.name is string && data.name.size() >= 2 && data.name.size() <= 120
+        && (!('email' in data) || (data.email is string && data.email.size() <= 160))
+        && (!('phone' in data) || (data.phone is string && data.phone.size() <= 32));
+    }
+
     match /lots/{lotId} {
       allow read: if true;
       allow write: if false;
@@ -17,7 +23,10 @@ service cloud.firestore {
     }
 
     match /leads/{leadId} {
-      allow read, write: if false;
+      allow read: if true;
+      allow create: if isValidLead(request.resource.data);
+      allow update: if isValidLead(request.resource.data);
+      allow delete: if false;
     }
 
     // Block everything else by default
